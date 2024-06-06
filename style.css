@@ -66,6 +66,11 @@ ul {
   color: #fff;
 }
 
+.btn-round {
+  border-radius: 30px !important;
+  padding: 10px 25px !important;
+}
+
 /* header section */
 header {
   padding: 26px 0 24px;
@@ -239,9 +244,11 @@ header {
 
 /* nav section start */
 nav {
+  display: block;
   width: 100%;
   position: relative;
   z-index: 99;
+  padding: 15px;
 }
 
 .nav-menu .menu-items {
@@ -292,11 +299,16 @@ nav {
   visibility: hidden;
 }
 .brands-nav-dropdown li {
-  padding: 9px 20px;
+  padding: 12px 20px;
   border-bottom: 1px solid #eaeaea;
   font-size: 12px;
   color: #2d2d2d;
   font-weight: normal;
+}
+
+.brands-nav-dropdown li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .menu-items li:hover .brands-nav-dropdown {
@@ -326,7 +338,7 @@ nav {
   position: absolute;
   background-color: #ffffff;
   z-index: 9;
-  min-width: 1354px;
+  min-width: 1200px;
   width: 100%;
   height: auto;
   text-align: left;
@@ -334,25 +346,39 @@ nav {
   margin-top: 50px;
   visibility: hidden;
   opacity: 1;
-  transform: translateX(-29%);
+  transform: translateX(-25%);
   transition: all 0.3s ease-in-out;
 }
 
 .menu-items li:hover .men-nav-dropdown {
-  margin-top: 20px;
+  margin-top: 24px;
   visibility: visible;
   opacity: 1;
   transition: all 0.3s ease-in-out;
 }
 
 .brands-dropdown h6 {
+  font-size: 13px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   padding-left: 25px;
-  
+  color: #000000;
+  opacity: 0.6;
 }
 
-
-.brands-dropdown li {
+.men-nav-dropdown .brands-dropdown li {
   padding: 6px 20px;
+}
+
+.brands-dropdown span {
+  font-size: 12px;
+  color: #000000;
+  opacity: 0.9;
+  font-weight: normal;
+}
+
+.men-nav-dropdown .brands-dropdown > li:first-child > span {
+  color: red !important;
 }
 
 /* nav section end */

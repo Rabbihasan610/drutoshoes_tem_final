@@ -116,10 +116,10 @@
     <!-- nav section -->
 
     <nav class="container mx-auto static">
-      <div class="nav-menu p-6 static">
-        <ul class="flex items-center justify-between menu-items">
-          <li>SNEAKER STUDIO</li>
-          <li class="relative">
+      <div class="nav-menu p-6 static overflow-hidden hover:overflow-visible">
+        <ul class="flex items-center justify-between menu-items space-x-4">
+          <li class="flex-shrink-0" id="first-item">SNEAKER STUDIO</li>
+          <li class="flex-shrink-0 relative" id="second-item">
             BRANDS
             <div class="brands-nav-dropdown">
               <ul class="brands-dropdown">
@@ -166,50 +166,42 @@
               </ul>
             </div>
           </li>
-          <li>
+          <li class="flex-shrink-0">
             MEN
             <div>
-              <div class="men-nav-dropdown flex justify-between">
+              <div
+                class="men-nav-dropdown grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 p-4"
+              >
                 <ul class="brands-dropdown">
                   <h6>ALL SHOES</h6>
                   <li class="menu-lv-2">
-                    <i class="fa-solid fa-angle-right"></i>
                     <span>Power</span>
                   </li>
                   <li class="menu-lv-2">
-                    <i class="fa-solid fa-angle-right"></i>
                     <span>North star</span>
                   </li>
                   <li class="menu-lv-2">
-                    <i class="fa-solid fa-angle-right"></i>
                     <span>Bata Red Label</span>
                   </li>
                   <li class="menu-lv-2">
-                    <i class="fa-solid fa-angle-right"></i>
                     <span>Adidas</span>
                   </li>
                   <li class="menu-lv-2">
-                    <i class="fa-solid fa-angle-right"></i>
                     <span>Bata</span>
                   </li>
                   <li class="menu-lv-2">
-                    <i class="fa-solid fa-angle-right"></i>
                     <span>Bata 3D</span>
                   </li>
                   <li class="menu-lv-2">
-                    <i class="fa-solid fa-angle-right"></i>
                     <span>Comfit</span>
                   </li>
                   <li class="menu-lv-2">
-                    <i class="fa-solid fa-angle-right"></i>
                     <span>Hush puppies</span>
                   </li>
                   <li class="menu-lv-2">
-                    <i class="fa-solid fa-angle-right"></i>
                     <span>Weinbrenner</span>
                   </li>
                   <li class="menu-lv-2">
-                    <i class="fa-solid fa-angle-right"></i>
                     <span>Scholl</span>
                   </li>
                 </ul>
@@ -388,10 +380,12 @@
               </div>
             </div>
           </li>
-          <li>WOMEN</li>
-          <li>CHILDREN</li>
-          <li>ACCESSORIES</li>
-          <li>
+          <li class="flex-shrink-0">WOMEN</li>
+          <li class="flex-shrink-0 hidden sm:block extra-item" id="fifth-item">
+            CHILDREN
+          </li>
+          <li class="flex-shrink-0 hidden sm:block extra-item">ACCESSORIES</li>
+          <li class="flex-shrink-0 hidden sm:block extra-item">
             BATA CLUB
             <div class="brands-nav-dropdown">
               <ul class="brands-dropdown">
@@ -410,14 +404,13 @@
               </ul>
             </div>
           </li>
-
-          <li>B-MAG</li>
-          <li>FRANCHISE</li>
+          <li class="flex-shrink-0 hidden sm:block extra-item">B-MAG</li>
+          <li class="flex-shrink-0 hidden sm:block extra-item">FRANCHISE</li>
         </ul>
       </div>
     </nav>
 
-    <!-- category section end -->
+    <!-- nav section end -->
 
     <!-- banner section start -->
     <!-- Swiper -->
@@ -467,7 +460,7 @@
 
     <main class="container mx-auto mb-10">
       <div
-        class="flex justify-center items-center gap-4 discount cursor-pointer"
+        class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center items-center cursor-pointer"
       >
         <div>
           <img
@@ -495,13 +488,17 @@
         </div>
       </div>
 
-      <div class="mt-10 cursor-pointer">
+      <!-- voucher section -->
+      <div class="mt-10 cursor-pointer flex justify-center">
         <img
           src="https://cdn.shopify.com/s/files/1/2287/9679/files/Batabd-GV-web-banner_2.jpg?v=1717667738"
           alt=""
+          class="w-full h-auto"
         />
       </div>
-      <div class="flex justify-between items-center mt-10 gap-4">
+
+      <!-- product collection section-->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
         <div class="animate-scale">
           <img
             src="https://www.batabd.com/cdn/shop/files/men_83f8de7d-13d0-4b25-9c15-44f2b8a8f6c2_1200x_crop_center.jpg?v=1649306392"
@@ -509,7 +506,6 @@
             class="lazyloaded"
           />
         </div>
-
         <div class="animate-scale">
           <img
             src="https://www.batabd.com/cdn/shop/files/women_fc729eea-7c5e-411e-b8d3-e7bffad504bc_1200x_crop_center.jpg?v=1649306423"
@@ -530,6 +526,19 @@
             alt=""
             class="lazyloaded"
           />
+        </div>
+      </div>
+
+      <!-- just-landed -->
+      <div class="just-landed">
+        <h1>JUST LANDED</h1>
+        <div class="flex justify-center items-center gap-5">
+          <button class="btn btn-outline btn-secondary btn-round">Casuals</button>
+          <button class="btn btn-outline btn-secondary btn-round">Sneakers</button>
+          <button class="btn btn-outline btn-secondary btn-round">Sandals</button>
+          <button class="btn btn-outline btn-secondary btn-round">Ladies Flats</button>
+          <button class="btn btn-outline btn-secondary btn-round">Formals</button>
+          <button class="btn btn-outline btn-secondary btn-round">Accessories</button>
         </div>
       </div>
     </main>
