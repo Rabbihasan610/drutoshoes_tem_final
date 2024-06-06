@@ -9,19 +9,15 @@
     <link href="./style.css" rel="stylesheet" />
 
     <!-- tailwind link -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link href="/dist/main.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet" />
 
     <!-- daisyui link -->
     <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css"
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- google font-link -->
     <style>
@@ -117,13 +113,13 @@
 
     <!-- headder section complete -->
 
-    <!-- category section -->
+    <!-- nav section -->
 
-    <div class="container mx-auto category">
-      <div class="flex items-center justify-between category-items">
-        <ul class="flex items-center justify-between w-full">
+    <nav class="container mx-auto static">
+      <div class="nav-menu p-6 static">
+        <ul class="flex items-center justify-between menu-items">
           <li>SNEAKER STUDIO</li>
-          <li>
+          <li class="relative">
             BRANDS
             <div class="brands-nav-dropdown">
               <ul class="brands-dropdown">
@@ -172,85 +168,260 @@
           </li>
           <li>
             MEN
-            <div class="men-nav-dropdown">
-              <div class="men-dropdown">
-                <ul class="site-nav-dropdown">
-                  <li class="menu-lv-3"><span> Adidas </span></li>
-                  <li class="menu-lv-3"><span> Ambassador </span></li>
-                  <li class="menu-lv-3"><span> Bata </span></li>
-                  <li class="menu-lv-3"><span> Bata Comfit </span></li>
-                  <li class="menu-lv-3"><span> Bata Red Label </span></li>
-                  <li class="menu-lv-3"><span> Bata 3D </span></li>
-                  <li class="menu-lv-3"><span> Hush Puppies </span></li>
-                  <li class="menu-lv-3"><span> North Star </span></li>
-                  <li class="menu-lv-3"><span> Power </span></li>
-                  <li class="menu-lv-3"><span> Weinbrenner </span></li>
-                  <li class="menu-lv-3"><span> Scholl </span></li>
+            <div>
+              <div class="men-nav-dropdown flex justify-between">
+                <ul class="brands-dropdown">
+                  <h6>ALL SHOES</h6>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Power</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>North star</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Bata Red Label</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Adidas</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Bata</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Bata 3D</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Comfit</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Hush puppies</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Weinbrenner</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Scholl</span>
+                  </li>
                 </ul>
-              </div>
-              <div class="men-dropdown">
-                <ul class="site-nav-dropdown">
-                  <li class="menu-lv-3"><span> Adidas </span></li>
-                  <li class="menu-lv-3"><span> Ambassador </span></li>
-                  <li class="menu-lv-3"><span> Bata </span></li>
-                  <li class="menu-lv-3"><span> Bata Comfit </span></li>
-                  <li class="menu-lv-3"><span> Bata Red Label </span></li>
-                  <li class="menu-lv-3"><span> Bata 3D </span></li>
-                  <li class="menu-lv-3"><span> Hush Puppies </span></li>
-                  <li class="menu-lv-3"><span> North Star </span></li>
-                  <li class="menu-lv-3"><span> Power </span></li>
-                  <li class="menu-lv-3"><span> Weinbrenner </span></li>
-                  <li class="menu-lv-3"><span> Scholl </span></li>
+                <ul class="brands-dropdown">
+                  <h6>BRANDS</h6>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Power</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>North star</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Bata Red Label</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Adidas</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Bata</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Bata 3D</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Comfit</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Hush puppies</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Weinbrenner</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Scholl</span>
+                  </li>
                 </ul>
-              </div>
-              <div class="men-dropdown">
-                <ul class="site-nav-dropdown">
-                  <li class="menu-lv-3"><span> Adidas </span></li>
-                  <li class="menu-lv-3"><span> Ambassador </span></li>
-                  <li class="menu-lv-3"><span> Bata </span></li>
-                  <li class="menu-lv-3"><span> Bata Comfit </span></li>
-                  <li class="menu-lv-3"><span> Bata Red Label </span></li>
-                  <li class="menu-lv-3"><span> Bata 3D </span></li>
-                  <li class="menu-lv-3"><span> Hush Puppies </span></li>
-                  <li class="menu-lv-3"><span> North Star </span></li>
-                  <li class="menu-lv-3"><span> Power </span></li>
-                  <li class="menu-lv-3"><span> Weinbrenner </span></li>
-                  <li class="menu-lv-3"><span> Scholl </span></li>
+                <ul class="brands-dropdown">
+                  <h6>By COLOR</h6>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Power</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>North star</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Bata Red Label</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Adidas</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Bata</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Bata 3D</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Comfit</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Hush puppies</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Weinbrenner</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Scholl</span>
+                  </li>
                 </ul>
-              </div>
-              <div class="men-dropdown">
-                <ul class="site-nav-dropdown">
-                  <li class="menu-lv-3"><span> Adidas </span></li>
-                  <li class="menu-lv-3"><span> Ambassador </span></li>
-                  <li class="menu-lv-3"><span> Bata </span></li>
-                  <li class="menu-lv-3"><span> Bata Comfit </span></li>
-                  <li class="menu-lv-3"><span> Bata Red Label </span></li>
-                  <li class="menu-lv-3"><span> Bata 3D </span></li>
-                  <li class="menu-lv-3"><span> Hush Puppies </span></li>
-                  <li class="menu-lv-3"><span> North Star </span></li>
-                  <li class="menu-lv-3"><span> Power </span></li>
-                  <li class="menu-lv-3"><span> Weinbrenner </span></li>
-                  <li class="menu-lv-3"><span> Scholl </span></li>
+                <ul class="brands-dropdown">
+                  <h6>BY PRICE</h6>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Power</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>North star</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Bata Red Label</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Adidas</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Bata</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Bata 3D</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Comfit</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Hush puppies</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Weinbrenner</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Scholl</span>
+                  </li>
+                </ul>
+                <ul class="brands-dropdown">
+                  <h6>BY SIZE</h6>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Power</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>North star</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Bata Red Label</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Adidas</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Bata</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Bata 3D</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Comfit</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Hush puppies</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Weinbrenner</span>
+                  </li>
+                  <li class="menu-lv-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Scholl</span>
+                  </li>
                 </ul>
               </div>
             </div>
           </li>
-
           <li>WOMEN</li>
           <li>CHILDREN</li>
           <li>ACCESSORIES</li>
-          <li>BATA CLUB</li>
+          <li>
+            BATA CLUB
+            <div class="brands-nav-dropdown">
+              <ul class="brands-dropdown">
+                <li class="menu-lv-2">
+                  <i class="fa-solid fa-angle-right"></i>
+                  <span> Check your Bata Club points</span>
+                </li>
+                <li class="menu-lv-2">
+                  <i class="fa-solid fa-angle-right"></i>
+                  <span> Register Yourself</span>
+                </li>
+                <li class="menu-lv-2">
+                  <i class="fa-solid fa-angle-right"></i>
+                  <span> Bata Club Benefits</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+
           <li>B-MAG</li>
           <li>FRANCHISE</li>
         </ul>
       </div>
-    </div>
+    </nav>
 
     <!-- category section end -->
 
     <!-- banner section start -->
     <!-- Swiper -->
-    <div class="swiper mySwiper mb-9">
+    <div class="swiper mySwiper mb-14 cursor-pointer">
       <div class="swiper-wrapper">
         <div class="swiper-slide pointer">
           <img
@@ -295,7 +466,9 @@
     </div>
 
     <main class="container mx-auto mb-10">
-      <div class="flex justify-center items-center discount">
+      <div
+        class="flex justify-center items-center gap-4 discount cursor-pointer"
+      >
         <div>
           <img
             src="https://cdn.shopify.com/s/files/1/2287/9679/files/999.jpg?v=1698829404"
@@ -318,6 +491,44 @@
           <img
             src="https://cdn.shopify.com/s/files/1/2287/9679/files/4000.jpg?v=1698829404"
             alt=""
+          />
+        </div>
+      </div>
+
+      <div class="mt-10 cursor-pointer">
+        <img
+          src="https://cdn.shopify.com/s/files/1/2287/9679/files/Batabd-GV-web-banner_2.jpg?v=1717667738"
+          alt=""
+        />
+      </div>
+      <div class="flex justify-between items-center mt-10 gap-4">
+        <div class="animate-scale">
+          <img
+            src="https://www.batabd.com/cdn/shop/files/men_83f8de7d-13d0-4b25-9c15-44f2b8a8f6c2_1200x_crop_center.jpg?v=1649306392"
+            alt="Image"
+            class="lazyloaded"
+          />
+        </div>
+
+        <div class="animate-scale">
+          <img
+            src="https://www.batabd.com/cdn/shop/files/women_fc729eea-7c5e-411e-b8d3-e7bffad504bc_1200x_crop_center.jpg?v=1649306423"
+            alt=""
+            class="lazyloaded"
+          />
+        </div>
+        <div class="animate-scale">
+          <img
+            src="https://www.batabd.com/cdn/shop/files/kids_90162511-b047-40e8-8f07-f4f22b3fe4b1_1200x_crop_center.jpg?v=1649306454"
+            alt=""
+            class="lazyloaded"
+          />
+        </div>
+        <div class="animate-scale">
+          <img
+            src="https://cdn.shopify.com/s/files/1/2287/9679/files/accessories_149d3d85-612c-4b01-8503-dc6870232413.jpg?v=1649306540"
+            alt=""
+            class="lazyloaded"
           />
         </div>
       </div>
