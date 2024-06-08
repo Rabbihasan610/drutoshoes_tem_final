@@ -36,7 +36,23 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+    <!-- slick slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   </head>
+
   <body>
     <!-- header section start -->
     <header>
@@ -458,6 +474,7 @@
       <div class="swiper-pagination"></div>
     </div>
 
+    <!-- main section -->
     <main class="container mx-auto mb-10">
       <div
         class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center items-center cursor-pointer"
@@ -530,15 +547,485 @@
       </div>
 
       <!-- just-landed -->
-      <div class="just-landed">
-        <h1>JUST LANDED</h1>
-        <div class="flex justify-center items-center gap-5">
-          <button class="btn btn-outline btn-secondary btn-round">Casuals</button>
-          <button class="btn btn-outline btn-secondary btn-round">Sneakers</button>
-          <button class="btn btn-outline btn-secondary btn-round">Sandals</button>
-          <button class="btn btn-outline btn-secondary btn-round">Ladies Flats</button>
-          <button class="btn btn-outline btn-secondary btn-round">Formals</button>
-          <button class="btn btn-outline btn-secondary btn-round">Accessories</button>
+
+      <div class="pt-10 relative">
+        <div class="just-landed">
+          <h1>JUST LANDED</h1>
+          <div class="flex justify-center items-center gap-5">
+            <button
+              id="btn-casuals"
+              class="btn btn-outline btn-secondary btn-round active"
+            >
+              Casuals
+            </button>
+            <button
+              id="btn-sneakers"
+              class="btn btn-outline btn-secondary btn-round"
+            >
+              Sneakers
+            </button>
+            <button
+              id="btn-sandals"
+              class="btn btn-outline btn-secondary btn-round"
+            >
+              Sandals
+            </button>
+          </div>
+
+          <div class="slider1">
+            <div id="slider-casuals" class="slider py-20">
+              <div class="slider-item relative h-full">
+                <div class="relative">
+                  <div class="w-full h-auto relative slider-img">
+                    <!-- Second image -->
+                    <img
+                      src="//www.batabd.com/cdn/shop/files/8514060_2_300x.jpg?v=1716973491"
+                      alt=""
+                      class="second-image absolute top-0 left-0 w-full opacity-0 transition duration-300"
+                    />
+                    <!-- First image -->
+                    <img
+                      src="https://www.batabd.com/cdn/shop/files/8514060_1_compact.jpg?v=1716973490"
+                      alt=""
+                      class="first-image block w-full transition duration-300"
+                    />
+                    <!-- Icons and span -->
+                    <i
+                      class="far fa-heart absolute top-3 right-3 text-2xl opacity-0 transition duration-300"
+                    ></i>
+
+                    <span
+                      class="quickview-button bg-white text-black hover:bg-black hover:text-white"
+                    >
+                      Quick view
+                    </span>
+                  </div>
+                </div>
+
+                <div class="items-info items-center">
+                  <h5 class="pb-2">BATA</h5>
+                  <h6 class="pb-2">Bata RUBENS Casual Loafer For Men</h6>
+                  <div>
+                    <del class="font-bold pr-2 opacity-30">TK. 1399.00</del>
+                    <span class="font-bold text-red-600">TK. 1049.00</span>
+                  </div>
+                </div>
+
+                <div
+                  class="text-continue flex items-center justify-center pt-4"
+                >
+                  <!-- Adjusted class and added justify-center -->
+                  <button class="shop-btn" href="#">Shop Now</button>
+                </div>
+              </div>
+              
+              <!-- Add other slider items here -->
+              <div class="slider-item relative h-full">
+                <div class="relative">
+                  <div class="w-full h-auto relative slider-img">
+                    <!-- Second image -->
+                    <img
+                      src="//www.batabd.com/cdn/shop/files/8514060_2_300x.jpg?v=1716973491"
+                      alt=""
+                      class="second-image absolute top-0 left-0 w-full opacity-0 transition duration-300"
+                    />
+                    <!-- First image -->
+                    <img
+                      src="https://www.batabd.com/cdn/shop/files/8514060_1_compact.jpg?v=1716973490"
+                      alt=""
+                      class="first-image block w-full transition duration-300"
+                    />
+                    <!-- Icons and span -->
+                    <i
+                      class="far fa-heart absolute top-3 right-3 text-2xl opacity-0 transition duration-300"
+                    ></i>
+
+                    <span
+                      class="quickview-button bg-white text-black hover:bg-black hover:text-white"
+                    >
+                      Quick view
+                    </span>
+                  </div>
+                </div>
+
+                <div class="items-info items-center">
+                  <h5 class="pb-2">BATA</h5>
+                  <h6 class="pb-2">Bata RUBENS Casual Loafer For Men</h6>
+                  <div>
+                    <del class="font-bold pr-2 opacity-30">TK. 1399.00</del>
+                    <span class="font-bold text-red-600">TK. 1049.00</span>
+                  </div>
+                </div>
+
+                <div
+                  class="text-continue flex items-center justify-center pt-4"
+                >
+                  <!-- Adjusted class and added justify-center -->
+                  <button class="shop-btn" href="#">Shop Now</button>
+                </div>
+              </div>
+              <div class="slider-item relative h-full">
+                <div class="relative">
+                  <div class="w-full h-auto relative slider-img">
+                    <!-- Second image -->
+                    <img
+                      src="//www.batabd.com/cdn/shop/files/8514060_2_300x.jpg?v=1716973491"
+                      alt=""
+                      class="second-image absolute top-0 left-0 w-full opacity-0 transition duration-300"
+                    />
+                    <!-- First image -->
+                    <img
+                      src="https://www.batabd.com/cdn/shop/files/8514060_1_compact.jpg?v=1716973490"
+                      alt=""
+                      class="first-image block w-full transition duration-300"
+                    />
+                    <!-- Icons and span -->
+                    <i
+                      class="far fa-heart absolute top-3 right-3 text-2xl opacity-0 transition duration-300"
+                    ></i>
+
+                    <span
+                      class="quickview-button bg-white text-black hover:bg-black hover:text-white"
+                    >
+                      Quick view
+                    </span>
+                  </div>
+                </div>
+
+                <div class="items-info items-center">
+                  <h5 class="pb-2">BATA</h5>
+                  <h6 class="pb-2">Bata RUBENS Casual Loafer For Men</h6>
+                  <div>
+                    <del class="font-bold pr-2 opacity-30">TK. 1399.00</del>
+                    <span class="font-bold text-red-600">TK. 1049.00</span>
+                  </div>
+                </div>
+
+                <div
+                  class="text-continue flex items-center justify-center pt-4"
+                >
+                  <!-- Adjusted class and added justify-center -->
+                  <button class="shop-btn" href="#">Shop Now</button>
+                </div>
+              </div>
+              <div class="slider-item relative h-full">
+                <div class="relative">
+                  <div class="w-full h-auto relative slider-img">
+                    <!-- Second image -->
+                    <img
+                      src="//www.batabd.com/cdn/shop/files/8514060_2_300x.jpg?v=1716973491"
+                      alt=""
+                      class="second-image absolute top-0 left-0 w-full opacity-0 transition duration-300"
+                    />
+                    <!-- First image -->
+                    <img
+                      src="https://www.batabd.com/cdn/shop/files/8514060_1_compact.jpg?v=1716973490"
+                      alt=""
+                      class="first-image block w-full transition duration-300"
+                    />
+                    <!-- Icons and span -->
+                    <i
+                      class="far fa-heart absolute top-3 right-3 text-2xl opacity-0 transition duration-300"
+                    ></i>
+
+                    <span
+                      class="quickview-button bg-white text-black hover:bg-black hover:text-white"
+                    >
+                      Quick view
+                    </span>
+                  </div>
+                </div>
+
+                <div class="items-info items-center">
+                  <h5 class="pb-2">BATA</h5>
+                  <h6 class="pb-2">Bata RUBENS Casual Loafer For Men</h6>
+                  <div>
+                    <del class="font-bold pr-2 opacity-30">TK. 1399.00</del>
+                    <span class="font-bold text-red-600">TK. 1049.00</span>
+                  </div>
+                </div>
+
+                <div
+                  class="text-continue flex items-center justify-center pt-4"
+                >
+                  <!-- Adjusted class and added justify-center -->
+                  <button class="shop-btn" href="#">Shop Now</button>
+                </div>
+              </div>
+              <div class="slider-item relative h-full">
+                <div class="relative">
+                  <div class="w-full h-auto relative slider-img">
+                    <!-- Second image -->
+                    <img
+                      src="//www.batabd.com/cdn/shop/files/8514060_2_300x.jpg?v=1716973491"
+                      alt=""
+                      class="second-image absolute top-0 left-0 w-full opacity-0 transition duration-300"
+                    />
+                    <!-- First image -->
+                    <img
+                      src="https://www.batabd.com/cdn/shop/files/8514060_1_compact.jpg?v=1716973490"
+                      alt=""
+                      class="first-image block w-full transition duration-300"
+                    />
+                    <!-- Icons and span -->
+                    <i
+                      class="far fa-heart absolute top-3 right-3 text-2xl opacity-0 transition duration-300"
+                    ></i>
+
+                    <span
+                      class="quickview-button bg-white text-black hover:bg-black hover:text-white"
+                    >
+                      Quick view
+                    </span>
+                  </div>
+                </div>
+
+                <div class="items-info items-center">
+                  <h5 class="pb-2">BATA</h5>
+                  <h6 class="pb-2">Bata RUBENS Casual Loafer For Men</h6>
+                  <div>
+                    <del class="font-bold pr-2 opacity-30">TK. 1399.00</del>
+                    <span class="font-bold text-red-600">TK. 1049.00</span>
+                  </div>
+                </div>
+
+                <div
+                  class="text-continue flex items-center justify-center pt-4"
+                >
+                  <!-- Adjusted class and added justify-center -->
+                  <button class="shop-btn" href="#">Shop Now</button>
+                </div>
+              </div>
+              <div class="slider-item relative h-full">
+                <div class="relative">
+                  <div class="w-full h-auto relative slider-img">
+                    <!-- Second image -->
+                    <img
+                      src="//www.batabd.com/cdn/shop/files/8514060_2_300x.jpg?v=1716973491"
+                      alt=""
+                      class="second-image absolute top-0 left-0 w-full opacity-0 transition duration-300"
+                    />
+                    <!-- First image -->
+                    <img
+                      src="https://www.batabd.com/cdn/shop/files/8514060_1_compact.jpg?v=1716973490"
+                      alt=""
+                      class="first-image block w-full transition duration-300"
+                    />
+                    <!-- Icons and span -->
+                    <i
+                      class="far fa-heart absolute top-3 right-3 text-2xl opacity-0 transition duration-300"
+                    ></i>
+
+                    <span
+                      class="quickview-button bg-white text-black hover:bg-black hover:text-white"
+                    >
+                      Quick view
+                    </span>
+                  </div>
+                </div>
+
+                <div class="items-info items-center">
+                  <h5 class="pb-2">BATA</h5>
+                  <h6 class="pb-2">Bata RUBENS Casual Loafer For Men</h6>
+                  <div>
+                    <del class="font-bold pr-2 opacity-30">TK. 1399.00</del>
+                    <span class="font-bold text-red-600">TK. 1049.00</span>
+                  </div>
+                </div>
+
+                <div
+                  class="text-continue flex items-center justify-center pt-4"
+                >
+                  <!-- Adjusted class and added justify-center -->
+                  <button class="shop-btn" href="#">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div id="slider-sneakers" class="slider py-20 hidden">
+              <div class="slider-item relative h-full">
+                <div class="relative">
+                  <div class="w-full h-auto relative slider-img">
+                    <!-- Second image -->
+                    <img
+                      src="https://www.batabd.com/cdn/shop/files/8516060_2_compact.jpg?v=1716972412"
+                      alt=""
+                      class="second-image absolute top-0 left-0 w-full opacity-0 transition duration-300"
+                    />
+
+                    <!-- First image -->
+                    <img
+                      src=" https://www.batabd.com/cdn/shop/files/8516060_1_compact.jpg?v=1716972411"
+                      alt=""
+                      class="first-image block w-full transition duration-300"
+                    />
+
+                    <!-- Icons and span -->
+                    <i
+                      class="far fa-heart absolute top-3 right-3 text-2xl opacity-0 transition duration-300"
+                    ></i>
+
+                    <span
+                      class="quickview-button bg-white text-black hover:bg-black hover:text-white"
+                    >
+                      Quick view
+                    </span>
+                  </div>
+                </div>
+
+                <div class="items-info items-center">
+                  <h5 class="pb-2">BATA</h5>
+                  <h6 class="pb-2">Bata RUBENS Casual Loafer For Men</h6>
+                  <div>
+                    <del class="font-bold pr-2 opacity-30">TK. 1399.00</del>
+                    <span class="font-bold text-red-600">TK. 1049.00</span>
+                  </div>
+                </div>
+
+                <div
+                  class="text-continue flex items-center justify-center pt-4"
+                >
+                  <!-- Adjusted class and added justify-center -->
+                  <button class="shop-btn" href="#">Shop Now</button>
+                </div>
+              </div>
+              <!-- Add other slider items here -->
+              <div class="slider-item relative h-full">
+                <div class="relative">
+                  <div class="w-full h-auto relative slider-img">
+                    <!-- Second image -->
+                    <img
+                      src="//www.batabd.com/cdn/shop/files/8514060_2_300x.jpg?v=1716973491"
+                      alt=""
+                      class="second-image absolute top-0 left-0 w-full opacity-0 transition duration-300"
+                    />
+                    <!-- First image -->
+                    <img
+                      src="https://www.batabd.com/cdn/shop/files/8514060_1_compact.jpg?v=1716973490"
+                      alt=""
+                      class="first-image block w-full transition duration-300"
+                    />
+                    <!-- Icons and span -->
+                    <i
+                      class="far fa-heart absolute top-3 right-3 text-2xl opacity-0 transition duration-300"
+                    ></i>
+
+                    <span
+                      class="quickview-button bg-white text-black hover:bg-black hover:text-white"
+                    >
+                      Quick view
+                    </span>
+                  </div>
+                </div>
+
+                <div class="items-info items-center">
+                  <h5 class="pb-2">BATA</h5>
+                  <h6 class="pb-2">Bata RUBENS Casual Loafer For Men</h6>
+                  <div>
+                    <del class="font-bold pr-2 opacity-30">TK. 1399.00</del>
+                    <span class="font-bold text-red-600">TK. 1049.00</span>
+                  </div>
+                </div>
+
+                <div
+                  class="text-continue flex items-center justify-center pt-4"
+                >
+                  <!-- Adjusted class and added justify-center -->
+                  <button class="shop-btn" href="#">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div id="slider-sandals" class="slider py-20 hidden">
+              <div class="slider-item relative h-full">
+                <div class="relative">
+                  <div class="w-full h-auto relative slider-img">
+                    <!-- Second image -->
+                    <img
+                      src="https://www.batabd.com/cdn/shop/files/2_df10615a-c704-4fda-9d2e-e8f185d69b8c_compact.jpg?v=1712305841"
+                      alt=""
+                      class="second-image absolute top-0 left-0 w-full opacity-0 transition duration-300"
+                    />
+                    <!-- First image -->
+                    <img
+                      src="https://www.batabd.com/cdn/shop/files/1_70c5825f-6376-4793-8bc9-9dd44c67b6cd_compact.jpg?v=1712305841"
+                      alt=""
+                      class="first-image block w-full transition duration-300"
+                    />
+                    <!-- Icons and span -->
+                    <i
+                      class="far fa-heart absolute top-3 right-3 text-2xl opacity-0 transition duration-300"
+                    ></i>
+
+                    <span
+                      class="quickview-button bg-white text-black hover:bg-black hover:text-white"
+                    >
+                      Quick view
+                    </span>
+                  </div>
+                </div>
+
+                <div class="items-info items-center">
+                  <h5 class="pb-2">BATA</h5>
+                  <h6 class="pb-2">Bata RUBENS Casual Loafer For Men</h6>
+                  <div>
+                    <del class="font-bold pr-2 opacity-30">TK. 1399.00</del>
+                    <span class="font-bold text-red-600">TK. 1049.00</span>
+                  </div>
+                </div>
+
+                <div
+                  class="text-continue flex items-center justify-center pt-4"
+                >
+                  <!-- Adjusted class and added justify-center -->
+                  <button class="shop-btn" href="#">Shop Now</button>
+                </div>
+              </div>
+              <!-- Add other slider items here -->
+              <div class="slider-item relative h-full">
+                <div class="relative">
+                  <div class="w-full h-auto relative slider-img">
+                    <!-- Second image -->
+                    <img
+                      src="//www.batabd.com/cdn/shop/files/8514060_2_300x.jpg?v=1716973491"
+                      alt=""
+                      class="second-image absolute top-0 left-0 w-full opacity-0 transition duration-300"
+                    />
+                    <!-- First image -->
+                    <img
+                      src="https://www.batabd.com/cdn/shop/files/8514060_1_compact.jpg?v=1716973490"
+                      alt=""
+                      class="first-image block w-full transition duration-300"
+                    />
+                    <!-- Icons and span -->
+                    <i
+                      class="far fa-heart absolute top-3 right-3 text-2xl opacity-0 transition duration-300"
+                    ></i>
+
+                    <span
+                      class="quickview-button bg-white text-black hover:bg-black hover:text-white"
+                    >
+                      Quick view
+                    </span>
+                  </div>
+                </div>
+
+                <div class="items-info items-center">
+                  <h5 class="pb-2">BATA</h5>
+                  <h6 class="pb-2">Bata RUBENS Casual Loafer For Men</h6>
+                  <div>
+                    <del class="font-bold pr-2 opacity-30">TK. 1399.00</del>
+                    <span class="font-bold text-red-600">TK. 1049.00</span>
+                  </div>
+                </div>
+
+                <div
+                  class="text-continue flex items-center justify-center pt-4"
+                >
+                  <!-- Adjusted class and added justify-center -->
+                  <button class="shop-btn" href="#">Shop Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>

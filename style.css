@@ -57,7 +57,6 @@ ul {
   border: 1px solid #111827;
   min-width: 130px;
   max-width: 100%;
-
   transition: all 0.3s ease;
 }
 
@@ -70,6 +69,24 @@ ul {
   border-radius: 30px !important;
   padding: 10px 25px !important;
 }
+
+/* .shop-btn {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  overflow: hidden;
+  border-radius: 3px;
+  padding: 10px 35px;
+  background: #000;
+  color: #fff;
+  min-width: 130px;
+  max-width: 100%;
+  transition: all 0.3s ease;
+}
+
+.shop-btn:hover{
+  background-color: red;
+} */
 
 /* header section */
 header {
@@ -434,4 +451,137 @@ nav {
 .lazyloaded {
   opacity: 1;
   transition: opacity 0.3s;
+}
+
+
+
+
+
+/* just Landed page card items */
+.slider {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+  transition: all 0.5s ease-in-out !important;
+}
+
+.slider-item {
+  width: calc(20% - 20px);
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.slider-item:hover {
+  z-index: 10 !important;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  transform: scale(1.05);
+}
+
+.slick-track {
+  margin-left: 10px !important;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  font-family: "FontAwesome" !important;
+  color: black !important;
+}
+
+.slick-prev::before {
+  content: "\f053" !important; 
+}
+
+.slick-next::before {
+  content: "\f054" !important; 
+}
+
+/* cart items */
+.quickview-button {
+  background-color: #fff;
+  color: #232323;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 5px 22px;
+  border-radius: 3px;
+  z-index: 4;
+  min-width: 100px;
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 1px 4px #00000026;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.slider-item:hover .quickview-button,
+.slider-item:hover .fa-heart,
+.slider-item:hover .items-info,
+.slider-item:hover .shop-btn {
+  opacity: 1;
+  visibility: visible;
+}
+
+.slider-img:hover .first-image {
+  opacity: 0 !important;
+}
+
+.slider-img:hover .second-image {
+  opacity: 1 !important;
+}
+
+.fa-heart:hover,
+.quickview-button:hover {
+  opacity: 1 !important;
+}
+
+.items-info {
+  text-align: center;
+  margin-top: 10px; 
+}
+
+.slider-item .shop-btn {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  overflow: hidden;
+  border-radius: 3px;
+  padding: 10px 45px;
+  background: #000;
+  color: #fff;
+  min-width: 130px;
+  max-width: 100%;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slider-item:hover .shop-btn {
+  opacity: 1;
+  visibility: visible;
+}
+
+.shop-btn:hover {
+  background-color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn-round.active {
+  background-color: #000;
+  color: #fff;
 }
