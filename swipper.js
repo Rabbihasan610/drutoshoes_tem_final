@@ -45,20 +45,30 @@ $(document).ready(function () {
         prevArrow: '<button class="slick-prev"><i class="fa fa-angle-left"></i></button>',
         nextArrow: '<button class="slick-next"><i class="fa fa-angle-right"></i></button>',
         dots: false,
-        centerMode: false,
         responsive: [
             {
-                breakpoint: 992,
+                breakpoint: 1024, // large devices
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
                 }
             },
             {
-                breakpoint: 768,
+                breakpoint: 768, // medium devices
                 settings: {
-                    slidesToShow: 3, // Adjust to show 3 items on even smaller screens if needed
+                    slidesToShow: 2,
+                    slidesToScroll: 1
                 }
             },
+            {
+                breakpoint: 480, // small devices
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
         ]
     });
 });
@@ -76,11 +86,27 @@ document.addEventListener('DOMContentLoaded', function () {
     const sandalsSlider = document.getElementById('slider-sandals');
 
     function showSlider(activeBtn, activeSlider) {
+        // Remove active class from all buttons
         [casualsBtn, sneakersBtn, sandalsBtn].forEach(btn => btn.classList.remove('active'));
         activeBtn.classList.add('active');
 
+        // Hide all sliders
         [casualsSlider, sneakersSlider, sandalsSlider].forEach(slider => slider.classList.add('hidden'));
+
+        // Show the active slider
         activeSlider.classList.remove('hidden');
+
+        // Set width for each slider item
+        const sliderItems = activeSlider.getElementsByClassName('slider-item');
+        Array.from(sliderItems).forEach(item => {
+            item.style.width = '236px';
+        });
+
+        // Add class to the slick-track div
+        const slickTrack = activeSlider.querySelector('.slick-track');
+        if (slickTrack) {
+            slickTrack.classList.add('content');
+        }
     }
 
     casualsBtn.addEventListener('click', function () {
@@ -94,5 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
     sandalsBtn.addEventListener('click', function () {
         showSlider(sandalsBtn, sandalsSlider);
     });
-});
 
+
+    showSlider(casualsBtn, casualsSlider);
+});
