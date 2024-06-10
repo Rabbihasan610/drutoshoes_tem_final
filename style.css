@@ -70,33 +70,9 @@ ul {
   padding: 10px 25px !important;
 }
 
-/* .shop-btn {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 16px;
-  overflow: hidden;
-  border-radius: 3px;
-  padding: 10px 35px;
-  background: #000;
-  color: #fff;
-  min-width: 130px;
-  max-width: 100%;
-  transition: all 0.3s ease;
-}
-
-.shop-btn:hover{
-  background-color: red;
-} */
-
 /* header section */
 header {
   padding: 26px 0 24px !important;
-}
-
-.header-mb {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .left-side {
@@ -447,6 +423,8 @@ nav {
   transition: opacity 0.3s;
 }
 
+
+
 /* just Landed page card items */
 
 .landing-page-tittle {
@@ -611,7 +589,7 @@ nav {
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
-/* footer title */
+/* footer section */
 
 .footer-title {
   color: #fff !important;
@@ -647,6 +625,19 @@ nav {
   visibility: visible;
 }
 
-#drawer {
-  transition: transform 0.3s ease-in-out;
+
+figure.zoom {
+  & img:hover {
+    opacity: 0;
+  }
+  img {
+    transition: opacity .5s;
+    display: block;
+    width: 100%;
+  }
+  background-position: 50% 50%;
+  position: relative;
+  width: 500px;
+  overflow: hidden;
+  cursor: zoom-in;
 }

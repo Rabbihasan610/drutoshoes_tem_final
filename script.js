@@ -136,3 +136,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     showSlider(casualsBtn, casualsSlider);
 });
+
+
+//product details 
+function goToDetails(productId) {
+    window.location.href = `/product-details.html?product_id=${productId}`;
+}
