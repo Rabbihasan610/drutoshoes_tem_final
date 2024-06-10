@@ -90,7 +90,7 @@ ul {
 
 /* header section */
 header {
-  padding: 26px 0 24px;
+  padding: 26px 0 24px !important;
 }
 
 .header-mb {
@@ -102,12 +102,6 @@ header {
 .left-side {
   border-left: 1px solid rgba(0, 0, 0, 0.1);
   padding-left: 15px;
-}
-
-.header-items {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .header-items i {
@@ -249,8 +243,8 @@ header {
 }
 .search-icons {
   position: absolute;
-  top: 0px;
-  right: 35px;
+  top: 8px;
+  right: 10px;
 }
 
 .searchBar i {
@@ -493,6 +487,12 @@ nav {
   transform: scale(1.05);
 }
 
+.slick-next {
+  right: 0px !important;
+}
+.slick-prev {
+  left: -15px !important;
+}
 .slick-track {
   margin-left: 10px !important;
 }
@@ -645,4 +645,8 @@ nav {
 .footer-nav > a:focus-within:before {
   width: 100%;
   visibility: visible;
+}
+
+#drawer {
+  transition: transform 0.3s ease-in-out;
 }

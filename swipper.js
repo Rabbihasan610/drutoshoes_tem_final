@@ -34,6 +34,18 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
+// header responsive drawer
+function toggleDrawer() {
+    const drawer = document.getElementById('drawer');
+    if (drawer.classList.contains('-translate-x-full')) {
+        drawer.classList.remove('-translate-x-full');
+        drawer.classList.add('translate-x-0');
+    } else {
+        drawer.classList.remove('translate-x-0');
+        drawer.classList.add('-translate-x-full');
+    }
+}
+
 // slick slider just landed page 
 
 $(document).ready(function () {
@@ -65,7 +77,7 @@ $(document).ready(function () {
             {
                 breakpoint: 480, // small devices
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1
                 }
             }

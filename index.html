@@ -57,81 +57,171 @@
 
   <body>
     <!-- header section start -->
-    <header>
-      <div class="container mx-auto px-10">
-        <div class="header-mb">
-          <div class="left-side header-items">
+
+    <header
+      class="container mx-auto flex-no-wrap relative flex w-full items-center justify-between bg-zinc-50 py-2 shadow-dark-mild dark:bg-neutral-700 md:flex-wrap md:justify-start md:py-4"
+    >
+      <div class="flex w-full flex-wrap items-center justify-between px-3">
+        <!-- Hamburger button for mobile view -->
+        <button
+          class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 md:hidden"
+          type="button"
+          aria-controls="navbarSupportedContent1"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onclick="toggleDrawer()"
+        >
+          <!-- Hamburger icon -->
+          <span class="">
+            <i class="fa-solid fa-bars text-2xl"></i>
+          </span>
+        </button>
+
+        <!-- Collapsible navigation container -->
+        <div class="flex" id="navbarSupportedContent1">
+          <!-- left side location -->
+          <div
+            class="!visible hidden md:!flex md:basis-auto left-side items-center justify-center"
+          >
             <i class="fa-solid fa-location-dot"></i>
-            <span class="locaton-text">
+            <span class="locaton-text md:text-xs lg:text-lg">
               Find A Store | Customer care: 09666200300
             </span>
           </div>
+          <div class="md:hidden">
+            <a href="#"
+              ><i class="fa-solid fa-magnifying-glass text-2xl"></i
+            ></a>
+          </div>
+        </div>
 
-          <div class="center-side header-items">
-            <h1
-              class="header-logo"
-              itemscope=""
-              itemtype="http://schema.org/Organization"
+        <!-- Drawer for mobile view -->
+        <div
+          id="drawer"
+          class="fixed top-16 left-0 z-50 w-11/12 h-full bg-zinc-50 dark:bg-neutral-700 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden"
+        >
+          <!-- Drawer content -->
+          <div class="flex justify-end p-4">
+            <button
+              class="border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200"
+              type="button"
+              aria-label="Close navigation"
+              onclick="toggleDrawer()"
             >
-              <meta itemprop="url" content="https://www.batabd.com" />
-
-              <a class="logo-img" href="" title="Logo">
-                <img
-                  itemprop="logo"
-                  data-src="//www.batabd.com/cdn/shop/files/logo-2_d42c63ce-1f56-4af2-a68f-a4cc3a91bd07.png?v=1614332440"
-                  src="//www.batabd.com/cdn/shop/files/logo-2_d42c63ce-1f56-4af2-a68f-a4cc3a91bd07.png?v=1614332440"
-                  alt="batabd"
-                  class="lazyautosizes lazyloaded"
-                  data-sizes="auto"
-                />
-              </a>
-            </h1>
+              <!-- Close icon -->
+              <span>
+                <i class="fa-solid fa-rectangle-xmark text-2xl"></i>
+              </span>
+            </button>
           </div>
 
-          <div class="right-side header-items">
-            <div class="customer-links">
-              <div class="user-icons flex items-center justify-center">
-                <i class="fa-regular fa-user"></i>
-                <i class="fa-solid fa-angle-down angle"></i>
+          <div class="flex items-center gap-10">
+            <div class="avatar">
+              <div
+                class="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2"
+              >
+                <img
+                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                />
               </div>
             </div>
+            <div class="">
+              <h1 class="text-lg">MD Gousul Islam</h1>
+              <p class="text-base">gausulislam5@gmail.com</p>
+              <span class="text-xs text-red-600">01785003901</span>
+            </div>
+          </div>
+          <hr class="bg-black mt-5" />
+          <ul class="list-style-none p-4">
+            <li class="mb-4">
+              <a href="#" class="text-black/60 dark:text-white/60">Dashboard</a>
+            </li>
+            <li class="mb-4">
+              <a href="#" class="text-black/60 dark:text-white/60">Team</a>
+            </li>
+            <li class="mb-4">
+              <a href="#" class="text-black/60 dark:text-white/60">Projects</a>
+            </li>
+          </ul>
+        </div>
 
-            <a class="wishlist" href="" title="My Wishlists">
-              <i class="fa-regular fa-heart"></i>
-            </a>
+        <!-- middle  logo img section -->
 
-            <a href="#"
-              ><img
-                src="https://cdn.shopify.com/s/files/1/2287/9679/files/whatsapp-icon.png?v=1631614102"
-                alt="whatsapp call"
-                style="width: 24px; margin-left: 15px"
-            /></a>
-            <div class="wrapper-top-cart cart-icon">
-              <i
-                class="fa-solid fa-cart-shopping shoppingCart cursor-pointer"
-              ></i>
-              <div class="badge badge-secondary">0</div>
-              <div class="dropdown-cart">
-                <div class="no-items">
-                  <p class="cart_empty">Your cart is currently empty.</p>
-                  <div class="text-continue">
-                    <a class="btn-black" href="#"> Continue Shopping </a>
-                  </div>
+        <div>
+          <a class="logo-img" href="" title="Logo">
+            <img
+              itemprop="logo"
+              data-src="//www.batabd.com/cdn/shop/files/logo-2_d42c63ce-1f56-4af2-a68f-a4cc3a91bd07.png?v=1614332440"
+              src="//www.batabd.com/cdn/shop/files/logo-2_d42c63ce-1f56-4af2-a68f-a4cc3a91bd07.png?v=1614332440"
+              alt="batabd"
+              class="lazyautosizes lazyloaded w-20 md:w-24 lg:w-full"
+              data-sizes="auto"
+            />
+          </a>
+        </div>
+
+        <!-- Right elements -->
+        <div class="relative flex items-center">
+          <!-- Icon -->
+          <a class="me-4 text-neutral-600 dark:text-white" href="#">
+            <div class="customer-links">
+              <div class="user-icons flex items-center justify-center">
+                <i class="fa-regular fa-user text-2xl"></i>
+                <i class="fa-solid fa-angle-down angle text-xl"></i>
+              </div>
+            </div>
+          </a>
+
+          <!-- wishlist icon -->
+
+          <a
+            class="wishlist hidden sm:hiddden md:block"
+            href=""
+            title="My Wishlists"
+          >
+            <i class="fa-regular fa-heart text-2xl"></i>
+          </a>
+
+          <!-- WhatsApp icon -->
+          <a href="#" class="hidden sm:hidden md:block">
+            <img
+              src="https://cdn.shopify.com/s/files/1/2287/9679/files/whatsapp-icon.png?v=1631614102"
+              alt="whatsapp call"
+              class="w-6 mx-4"
+            />
+          </a>
+
+          <!-- cart icons  -->
+
+          <div class="wrapper-top-cart cart-icon">
+            <i
+              class="fa-solid fa-cart-shopping shoppingCart cursor-pointer"
+            ></i>
+            <div class="badge badge-secondary">0</div>
+            <div class="dropdown-cart hidden sm:hidden md:hidden lg:block">
+              <div class="no-items sm:hidden md:hidden lg:block">
+                <p class="cart_empty">Your cart is currently empty.</p>
+                <div class="text-continue">
+                  <a class="btn-black" href="#"> Continue Shopping </a>
                 </div>
               </div>
             </div>
-            <div class="searchBar">
-              <input type="text" name="" id="" placeholder="SEARCH" />
-              <i class="fa-solid fa-magnifying-glass search-icons"></i>
-            </div>
+          </div>
+
+          <!-- searchbar -->
+
+          <div class="searchBar ml-3 hidden sm:hidden md:hidden lg:block">
+            <input type="text" placeholder="SEARCH" />
+            <i class="fa-solid fa-magnifying-glass search-icons"></i>
           </div>
         </div>
+        <!-- Right elements -->
       </div>
     </header>
 
     <!-- headder section complete -->
 
-    <!-- nav section -->
+    <!-- nav section start-->
 
     <nav class="container mx-auto static">
       <div class="nav-menu p-6 static overflow-hidden hover:overflow-visible">
@@ -432,6 +522,7 @@
 
     <!-- banner section start -->
     <!-- Swiper -->
+
     <div class="swiper mySwiper mb-14 cursor-pointer">
       <div class="swiper-wrapper">
         <div class="swiper-slide pointer">
@@ -476,7 +567,9 @@
       <div class="swiper-pagination"></div>
     </div>
 
-    <!-- main section -->
+    <!-- banner section end -->
+
+    <!-- main section  start-->
 
     <main class="container mx-auto mb-8">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 cursor-pointer">
@@ -1123,7 +1216,6 @@
           </div>
         </div>
       </div>
-
       <!-- features products show-->
 
       <div class="mt-56">
@@ -1405,9 +1497,7 @@
         </div>
       </div>
 
-      <!-- 
-      best seller section -->
-
+      <!-- best seller section -->
       <div class="my-5">
         <h1 class="text-2xl font-bold">Best Sellers</h1>
         <div>
@@ -1956,6 +2046,7 @@
       </div>
     </main>
 
+    <!-- main section  end-->
     <!-- Footer Section -->
 
     <footer class="footer p-10 bg-black text-white">
@@ -2040,8 +2131,9 @@
             >
               <path
                 d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
-              ></path></svg
-          ></a>
+              ></path>
+            </svg>
+          </a>
           <a
             ><svg
               xmlns="http://www.w3.org/2000/svg"
