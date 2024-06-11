@@ -51,8 +51,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-
-    <!-- tabls link -->
   </head>
 
   <body>
@@ -245,15 +243,62 @@
 
         <!-- Right elements -->
         <div class="relative flex items-center">
-          <!-- Icon -->
-          <a class="me-4 text-neutral-600 dark:text-white" href="#">
+          <a
+            class="me-4 text-neutral-600 dark:text-white"
+            href="#"
+            id="user-icon"
+          >
             <div class="customer-links">
               <div class="user-icons flex items-center justify-center">
+                <!-- Icon -->
                 <i class="fa-regular fa-user text-2xl"></i>
                 <i class="fa-solid fa-angle-down angle text-xl"></i>
               </div>
             </div>
           </a>
+
+          <!-- user profile dropdown menu -->
+          <div
+            class="absolute right-[75%] top-8 z-10 p-3 w-44 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dropdown-menu"
+            role="menu"
+            aria-orientation="vertical"
+            aria-labelledby="menu-button"
+            tabindex="-1"
+            id="dropdown-menu"
+          >
+            <div class="py-1" role="none">
+              <a
+                href="#"
+                class="block px-5 py-1 text-sm text-gray-700 hover:bg-gray-300 hover:text-gray-700 rounded-md"
+                onclick="gotoLogin()"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-0"
+              >
+                <i class="fa-regular fa-user text-lg pr-4"></i>
+                Login</a
+              >
+              <a
+                href="#"
+                onclick="gotoSignup()"
+                class="block px-5 py-1 text-sm text-gray-700 hover:bg-gray-300 hover:text-gray-700 rounded-md"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-1"
+                ><i class="fa-regular fa-address-card text-lg pr-2"></i> Sign
+                Up</a
+              >
+              <button
+                type="submit"
+                class="block px-5 py-1 text-sm text-gray-700 hover:bg-gray-300 hover:text-gray-700 rounded-md"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-3"
+              >
+                <i class="fa-solid fa-ban text-lg pr-4"></i>Sign out
+              </button>
+            </div>
+          </div>
 
           <!-- wishlist icon -->
 
@@ -276,15 +321,16 @@
 
           <!-- cart icons  -->
 
-          <div class="wrapper-top-cart cart-icon">
-            <i
-              class="fa-solid fa-cart-shopping shoppingCart cursor-pointer"
-            ></i>
+          <div
+            class="wrapper-top-cart relative inline-block transition-all duration-300 ease-in-out"
+            onclick="gotoCart()"
+          >
+            <i class="fa-solid fa-cart-shopping cursor-pointer text-2xl"></i>
             <div class="badge badge-secondary">0</div>
             <div class="dropdown-cart hidden sm:hidden md:hidden lg:block">
               <div class="no-items sm:hidden md:hidden lg:block">
-                <p class="cart_empty">Your cart is currently empty.</p>
-                <div class="text-continue">
+                <p class="text-center mb-6">Your cart is currently empty.</p>
+                <div class="mb-3">
                   <a class="btn-black" href="#"> Continue Shopping </a>
                 </div>
               </div>

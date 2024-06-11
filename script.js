@@ -1,3 +1,23 @@
+// header user dropdown menu
+document.getElementById('user-icon').addEventListener('click', function (event) {
+    event.preventDefault();
+    var dropdownMenu = document.getElementById('dropdown-menu');
+    dropdownMenu.classList.toggle('show');
+});
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (event) {
+    if (!event.target.matches('#user-icon') && !event.target.closest('#user-icon')) {
+        var dropdowns = document.getElementsByClassName('dropdown-menu');
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
 // header card dropdown menu js
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -141,4 +161,16 @@ document.addEventListener('DOMContentLoaded', function () {
 //product details 
 function goToDetails(productId) {
     window.location.href = `/product-details.html?product_id=${productId}`;
+}
+//product details 
+function gotoLogin() {
+    window.location.href = '/login.html'; // Corrected path
+}
+
+function gotoSignup() {
+    window.location.href = '/signup.html'; // Corrected path
+}
+
+function gotoCart() {
+    window.location.href = '/cartPage.html'; // Corrected path
 }

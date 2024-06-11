@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet" />
+
+    <!-- daisyui link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- font awesome link -->
+    <script
+      src="https://kit.fontawesome.com/f07af11b35.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="h-full bg-gray-400 dark:bg-gray-900">
+      <!-- Container -->
+      <div class="mx-auto">
+        <div class="flex justify-center px-6 py-12">
+          <!-- Row -->
+          <div class="w-full xl:w-3/4 lg:w-11/12 flex">
+            <!-- Col -->
+            <div
+              class="w-full h-auto bg-gray-400 dark:bg-gray-800 hidden lg:block lg:w-5/12 bg-cover rounded-l-lg"
+              style="
+                background-image: url('https://img.lovepik.com/photo/45009/7683.jpg_wh860.jpg');
+              "
+            ></div>
+            <!-- Col -->
+            <div
+              class="w-full lg:w-7/12 bg-white dark:bg-gray-700 p-5 rounded-lg lg:rounded-l-none"
+            >
+              <h3
+                class="py-4 text-2xl text-center text-gray-800 dark:text-white"
+              >
+                Login Now Druto Shoes !
+              </h3>
+              <form class="px-8 pt-6 pb-8 bg-white dark:bg-gray-800 rounded">
+                <div class="mb-4">
+                  <label
+                    class="block mb-2 text-sm font-bold text-gray-700 dark:text-white"
+                    for="email"
+                  >
+                    Email
+                  </label>
+                  <input
+                    class="w-full px-3 py-3 mb-3 text-sm leading-tight text-gray-700 dark:text-white border rounded-lg shadow appearance-none focus:outline-none focus:shadow-outline"
+                    id="email"
+                    type="email"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="mb-4 md:mr-2 md:mb-0">
+                  <label
+                    class="block mb-2 text-sm font-bold text-gray-700 dark:text-white"
+                    for="password"
+                  >
+                    Password
+                  </label>
+                  <input
+                    class="w-full px-3 py-3 mb-3 text-sm leading-tight text-gray-700 dark:text-white border rounded-lg shadow appearance-none focus:outline-none focus:shadow-outline"
+                    id="password"
+                    type="password"
+                    placeholder="******"
+                  />
+                </div>
+                <div class="mb-3 text-center">
+                  <button
+                    class="w-full px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700 dark:bg-blue-700 dark:text-white dark:hover:bg-blue-900 focus:outline-none focus:shadow-outline"
+                    type="button"
+                    onclick="index.html"
+                  >
+                    Login
+                  </button>
+                </div>
+                <div class="text-center">
+                  <a class="">
+                    Not registered?
+                    <span class="text-red-500">Sign Up!</span>
+                  </a>
+                </div>
+              </form>
+              <hr class="mb-3 border-t" />
+              <div class="flex items-center justify-center gap-8">
+                <button class="btn btn-square btn-outline">
+                  <i class="fa-brands fa-facebook-f text-2xl text-blue-500"></i>
+                </button>
+                <button class="btn btn-square btn-outline">
+                  <i class="fa-brands fa-apple text-2xl"></i>
+                </button>
+                <button class="btn btn-square btn-outline">
+                  <i class="fa-brands fa-google text-2xl text-red-400"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

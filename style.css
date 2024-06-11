@@ -110,14 +110,12 @@ header {
   padding-left: 8px;
 }
 
-.cart-icon {
-  position: relative;
-  transition: all 0.3s ease-in-out;
+/* user dropdown page */
+.dropdown-menu {
+  display: none;
 }
-
-.wrapper-top-cart {
-  position: relative;
-  display: inline-block;
+.dropdown-menu.show {
+  display: block;
 }
 
 /* cart badge css */
@@ -133,10 +131,6 @@ header {
   padding: 0.5em;
   height: 20px;
   width: 20px;
-}
-
-.wrapper-top-cart .shoppingCart {
-  font-size: 24px;
 }
 
 /* cart dropdown menu */
@@ -157,6 +151,26 @@ header {
   visibility: hidden;
   transform: translateY(-10px);
   transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .wrapper-top-cart .dropdown-cart {
+    right: 0px;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s;
+    max-width: 300px;
+    width: 100vw;
+    height: auto;
+  }
+  .wrapper-top-cart:hover .dropdown-cart {
+    transform: translateY(0);
+    transition-delay: 0s;
+  }
+  .no-items {
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
 }
 
 .wrapper-top-cart:hover .dropdown-cart {
@@ -177,25 +191,6 @@ header {
 .wrapper-top-cart:hover .no-items {
   opacity: 1;
   transform: translateY(0);
-}
-.wrapper-top-cart .cart-title,
-.header-bottom .lang-currency-groups .label-text {
-  display: none;
-}
-
-.customer-title,
-.cart-title {
-  margin-bottom: 22px;
-  margin-top: 7px;
-}
-
-.dropdown-cart .cart_empty {
-  margin-bottom: 25px;
-  text-align: center;
-}
-
-.text-continue {
-  margin-bottom: 12px;
 }
 
 /* header searchBar */
@@ -423,8 +418,6 @@ nav {
   transition: opacity 0.3s;
 }
 
-
-
 /* just Landed page card items */
 
 .landing-page-tittle {
@@ -623,21 +616,4 @@ nav {
 .footer-nav > a:focus-within:before {
   width: 100%;
   visibility: visible;
-}
-
-
-figure.zoom {
-  & img:hover {
-    opacity: 0;
-  }
-  img {
-    transition: opacity .5s;
-    display: block;
-    width: 100%;
-  }
-  background-position: 50% 50%;
-  position: relative;
-  width: 500px;
-  overflow: hidden;
-  cursor: zoom-in;
 }
