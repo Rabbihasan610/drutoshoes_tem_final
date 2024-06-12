@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Details</title>
+  </head>
+
+  <!-- tailwind link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="./output.css" rel="stylesheet" />
+
+  <!-- daisyui link -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+
+  <!-- font awesome link -->
+  <script
+    src="https://kit.fontawesome.com/f07af11b35.js"
+    crossorigin="anonymous"
+  ></script>
+  <body>
+    <section class="bg-white py-8 antialiased dark:bg-gray-900 md:py-16">
+      <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
+        <div class="flex justify-start item-start space-y-2 flex-col">
+          <h1
+            class="text-3xl dark:text-white lg:text-4xl font-semibold leading-7 lg:leading-9 text-gray-800"
+          >
+            Order #13432
+          </h1>
+          <p
+            class="text-base dark:text-gray-300 font-medium leading-6 text-gray-600"
+          >
+            12th june 2024 at 9:34 PM
+          </p>
+        </div>
+        <div class="flex items-center justify-center">
+          <ul class="timeline timeline-horizontal lg:timeline-vertical">
+            <li>
+              <div class="timeline-start">1984</div>
+              <div class="timeline-middle">
+                <i class="fa-solid fa-circle-check text-xl"></i>
+              </div>
+              <div class="timeline-end timeline-box">Payment Confirmed</div>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <div class="timeline-start">1998</div>
+              <div class="timeline-middle">
+                <i class="fa-solid fa-circle-check text-xl"></i>
+              </div>
+              <div class="timeline-end timeline-box">Order Confirmed</div>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <div class="timeline-start">2001</div>
+              <div class="timeline-middle">
+                <i class="fa-regular fa-circle-check text-xl"></i>
+              </div>
+              <div class="timeline-end timeline-box">Order Shiped</div>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <div class="timeline-start">2007</div>
+              <div class="timeline-middle">
+                <i class="fa-regular fa-circle-check text-xl"></i>
+              </div>
+              <div class="timeline-end timeline-box">Out for Delivery</div>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <div class="timeline-start">2015</div>
+              <div class="timeline-middle">
+                <i class="fa-regular fa-circle-check text-xl"></i>
+              </div>
+              <div class="timeline-end timeline-box">Delivery</div>
+            </li>
+          </ul>
+        </div>
+        <h2
+          class="text-xl pt-10 font-semibold text-gray-900 dark:text-white sm:text-2xl"
+        >
+          Customer Order Details
+        </h2>
+
+        <div class="mt-6 sm:mt-8 md:gap-6 lg:flex lg:items-start xl:gap-8">
+          <div class="mx-auto w-full flex-none lg:max-w-2xl xl:max-w-4xl">
+            <div class="space-y-6">
+              <!-- order cart items -->
+              <div
+                class="rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 md:p-6"
+              >
+                <div
+                  class="space-y-4 md:flex md:items-center md:justify-between md:gap-6 md:space-y-0"
+                >
+                  <a href="#" class="shrink-0 md:order-1">
+                    <img
+                      class="h-20 w-20 dark:hidden"
+                      src="https://www.batabd.com/cdn/shop/files/1_317af75e-2466-4609-824e-75855e524e76_medium.jpg?v=1717930432"
+                      alt="imac image"
+                    />
+                  </a>
+
+                  <div
+                    class="flex items-center justify-between md:order-3 md:justify-end"
+                  >
+                    <div class="text-end md:order-4 md:w-32">
+                      <p
+                        class="text-base font-bold text-gray-900 dark:text-white"
+                      >
+                        $1,499
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="w-full min-w-0 flex-1 space-y-4 md:order-2 md:max-w-md"
+                  >
+                    <a
+                      href="#"
+                      class="text-base font-medium text-gray-900 hover:underline dark:text-white"
+                      >PC system All in One APPLE iMac (2023) mqrq3ro/a, Apple
+                      M3, 24" Retina 4.5K, 8GB, SSD 256GB, 10-core GPU, Keyboard
+                      layout INT</a
+                    >
+
+                    <div class="flex items-center gap-4">
+                      <p>Quantity: <span>1</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="mx-auto mt-6 max-w-4xl flex-1 space-y-6 lg:mt-0 lg:w-full"
+          >
+            <div
+              class="space-y-4 rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 sm:p-6"
+            >
+              <p class="text-xl font-semibold text-gray-900 dark:text-white">
+                Order summary
+              </p>
+
+              <div class="space-y-4">
+                <div class="space-y-2">
+                  <dl class="flex items-center justify-between gap-4">
+                    <dt
+                      class="text-base font-normal text-gray-500 dark:text-gray-400"
+                    >
+                      Original price
+                    </dt>
+                    <dd
+                      class="text-base font-medium text-gray-900 dark:text-white"
+                    >
+                      $7,592.00
+                    </dd>
+                  </dl>
+
+                  <dl class="flex items-center justify-between gap-4">
+                    <dt
+                      class="text-base font-normal text-gray-500 dark:text-gray-400"
+                    >
+                      Savings
+                    </dt>
+                    <dd class="text-base font-medium text-green-600">
+                      -$299.00
+                    </dd>
+                  </dl>
+
+                  <dl class="flex items-center justify-between gap-4">
+                    <dt
+                      class="text-base font-normal text-gray-500 dark:text-gray-400"
+                    >
+                      Store Pickup
+                    </dt>
+                    <dd
+                      class="text-base font-medium text-gray-900 dark:text-white"
+                    >
+                      $99
+                    </dd>
+                  </dl>
+
+                  <dl class="flex items-center justify-between gap-4">
+                    <dt
+                      class="text-base font-normal text-gray-500 dark:text-gray-400"
+                    >
+                      Tax
+                    </dt>
+                    <dd
+                      class="text-base font-medium text-gray-900 dark:text-white"
+                    >
+                      $799
+                    </dd>
+                  </dl>
+                </div>
+
+                <dl
+                  class="flex items-center justify-between gap-4 border-t border-gray-200 pt-2 dark:border-gray-700"
+                >
+                  <dt class="text-base font-bold text-gray-900 dark:text-white">
+                    Total
+                  </dt>
+                  <dd class="text-base font-bold text-gray-900 dark:text-white">
+                    $8,191.00
+                  </dd>
+                </dl>
+              </div>
+              <div class="flex items-center justify-center gap-2">
+                <a
+                  href="#"
+                  title=""
+                  class="inline-flex items-center gap-2 text-sm font-medium text-primary-700 underline hover:no-underline dark:text-primary-500"
+                >
+                  Continue Shopping
+                  <i class="fa-solid fa-arrow-right text-sm no-underline"></i>
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="flex justify-between xl:h-full items-stretch w-full flex-col mt-3 md:mt-0"
+            >
+              <div
+                class="flex justify-center md:justify-start xl:flex-col flex-col md:space-x-6 lg:space-x-8 xl:space-x-0 space-y-4 xl:space-y-6 md:space-y-0 md:flex-row items-center md:items-start"
+              >
+                <div
+                  class="w-full flex justify-center md:justify-start items-center md:items-start flex-col rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 sm:p-6"
+                >
+                  <p
+                    class="text-xl dark:text-white font-semibold leading-4 text-center md:text-left text-gray-800"
+                  >
+                    Pyment Method
+                  </p>
+                  <p
+                    class="pt-3 w-48 lg:w-full dark:text-gray-300 xl:w-48 text-center md:text-left text-sm leading-5 text-gray-600"
+                  >
+                  Electronic bank transfers
+                  </p>
+                </div>
+                <div
+                  class="w-full flex justify-center md:justify-start items-center md:items-start flex-col rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 sm:p-6"
+                >
+                  <p
+                    class="text-xl dark:text-white font-semibold leading-4 text-center md:text-left text-gray-800"
+                  >
+                    Shipping Address
+                  </p>
+                  <p
+                    class="pt-3 w-48 lg:w-full dark:text-gray-300 xl:w-48 text-center md:text-left text-sm leading-5 text-gray-600"
+                  >
+                    180 North King Street, Northhampton MA 1060
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

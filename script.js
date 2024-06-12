@@ -174,3 +174,7 @@ function gotoSignup() {
 function gotoCart() {
     window.location.href = '/cartPage.html'; // Corrected path
 }
+
+function gotoCheckOutPage() {
+    window.location.href = '/CheckOutPage.html'; // Corrected path
+}
