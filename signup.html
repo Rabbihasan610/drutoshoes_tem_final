@@ -23,135 +23,114 @@
     ></script>
   </head>
   <body>
-    <div class="h-full bg-gray-400 dark:bg-gray-900">
-      <!-- Container -->
-      <div class="mx-auto">
-        <div class="flex justify-center px-6 py-12">
-          <!-- Row -->
-          <div class="w-full xl:w-3/4 lg:w-11/12 flex">
-            <!-- Col -->
-            <div
-              class="w-full h-auto bg-gray-400 dark:bg-gray-800 hidden lg:block lg:w-5/12 bg-cover rounded-l-lg"
-              style="
-                background-image: url('https://img.lovepik.com/photo/45009/7683.jpg_wh860.jpg');
-              "
-            ></div>
-            <!-- Col -->
-            <div
-              class="w-full lg:w-7/12 bg-white dark:bg-gray-700 p-5 rounded-lg lg:rounded-l-none"
-            >
-              <h3
-                class="py-4 text-2xl text-center text-gray-800 dark:text-white"
-              >
-                Create an Account!
-              </h3>
-              <form class="px-8 pt-6 pb-8 bg-white dark:bg-gray-800 rounded">
-                <div class="mb-4 md:flex md:justify-between">
-                  <div class="mb-4 md:mr-2 md:mb-0">
-                    <label
-                      class="block mb-2 text-sm font-bold text-gray-700 dark:text-white"
-                      for="firstName"
-                    >
-                      First Name
-                    </label>
-                    <input
-                      class="w-full px-3 py-2 text-sm leading-tight text-gray-700 dark:text-white border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-                      id="firstName"
-                      type="text"
-                      placeholder="First Name"
-                    />
-                  </div>
-                  <div class="md:ml-2">
-                    <label
-                      class="block mb-2 text-sm font-bold text-gray-700 dark:text-white"
-                      for="lastName"
-                    >
-                      Last Name
-                    </label>
-                    <input
-                      class="w-full px-3 py-2 text-sm leading-tight text-gray-700 dark:text-white border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-                      id="lastName"
-                      type="text"
-                      placeholder="Last Name"
-                    />
-                  </div>
-                </div>
-                <div class="mb-4">
-                  <label
-                    class="block mb-2 text-sm font-bold text-gray-700 dark:text-white"
-                    for="email"
+    <div
+      class="min-h-screen pt-5"
+      style="background-image: linear-gradient(115deg, #9f7aea, #fee2fe)"
+    >
+      <div class="container mx-auto">
+        <div
+          class="flex flex-col lg:flex-row w-11/12 lg:w-10/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden"
+        >
+          <div
+            class="w-full lg:w-1/2 flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-center"
+            style="
+              background: linear-gradient(
+                  to bottom,
+                  rgba(150, 161, 223, 0.52),
+                  rgba(7, 11, 15, 0.73)
+                ),
+                url('https://png.pngtree.com/png-vector/20220526/ourmid/pngtree-online-registration-or-sign-up-login-for-account-on-smartphone-app-png-image_4740863.png');
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center;
+            "
+          >
+            <h1 class="text-white text-3xl mb-3">Welcome</h1>
+            <div>
+              <p class="text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                suspendisse aliquam varius rutrum purus maecenas ac
+                <a href="#" class="text-purple-600 font-bold">Learn more</a>
+              </p>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 pt-8 pb-5 px-12">
+            <h2 class="text-3xl text-center mb-4 text-blue-800 font-bold">Register</h2>
+            <p class="mb-4">
+              Create your account. It’s free and only take a minute
+            </p>
+            <form action="#">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <input
+                  type="text"
+                  placeholder="Firstname"
+                  class="border border-gray-400 py-1 px-2"
+                />
+                <input
+                  type="text"
+                  placeholder="Lastname"
+                  class="border border-gray-400 py-1 px-2"
+                />
+              </div>
+              <div class="mt-5">
+                <input
+                  type="text"
+                  placeholder="Email"
+                  class="border border-gray-400 py-1 px-2 w-full"
+                />
+              </div>
+              <div class="mt-5">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="border border-gray-400 py-1 px-2 w-full"
+                />
+              </div>
+              <div class="mt-5">
+                <input
+                  type="password"
+                  placeholder="Confirm Password"
+                  class="border border-gray-400 py-1 px-2 w-full"
+                />
+              </div>
+              <div class="mt-5">
+                <input type="checkbox" class="border border-gray-400" />
+                <span>
+                  I accept the
+                  <a href="#" class="text-purple-500 font-semibold"
+                    >Terms of Use</a
                   >
-                    Email
-                  </label>
-                  <input
-                    class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 dark:text-white border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-                    id="email"
-                    type="email"
-                    placeholder="Email"
-                  />
-                </div>
-                <div class="mb-4 md:flex md:justify-between">
-                  <div class="mb-4 md:mr-2 md:mb-0">
-                    <label
-                      class="block mb-2 text-sm font-bold text-gray-700 dark:text-white"
-                      for="password"
-                    >
-                      Password
-                    </label>
-                    <input
-                      class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 dark:text-white border border-red-500 rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-                      id="password"
-                      type="password"
-                      placeholder="******"
-                    />
-                    <p class="text-xs italic text-red-500">
-                      Please choose a password.
-                    </p>
-                  </div>
-                  <div class="md:ml-2">
-                    <label
-                      class="block mb-2 text-sm font-bold text-gray-700 dark:text-white"
-                      for="c_password"
-                    >
-                      Confirm Password
-                    </label>
-                    <input
-                      class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 dark:text-white border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-                      id="c_password"
-                      type="password"
-                      placeholder="******"
-                    />
-                  </div>
-                </div>
-                <div class="mb-3 text-center">
-                  <button
-                    class="w-full px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700 dark:bg-blue-700 dark:text-white dark:hover:bg-blue-900 focus:outline-none focus:shadow-outline"
-                    type="button"
+                  &
+                  <a href="#" class="text-purple-500 font-semibold"
+                    >Privacy Policy</a
                   >
-                    Sign Up
-                  </button>
-                </div>
-                <div class="text-center">
-                  <a class="">
-                    Already have an account?
-                    <span class="text-red-500">Login!</span>
-                  </a>
-                </div>
-              </form>
-              <hr class="mb-3 border-t" />
-              <div class="flex items-center justify-center gap-8">
-                <button class="btn btn-square btn-outline">
-                  <i
-                    class="fa-brands fa-facebook-f text-2xl text-blue-500"
-                  ></i>
-                </button>
-                <button class="btn btn-square btn-outline">
-                    <i class="fa-brands fa-apple text-2xl"></i>
-                </button>
-                <button class="btn btn-square btn-outline">
-                    <i class="fa-brands fa-google text-2xl text-red-400"></i>
+                </span>
+              </div>
+              <div class="mt-5">
+                <button
+                  class="w-full bg-purple-500 py-3 text-center text-white"
+                >
+                  Register Now
                 </button>
               </div>
+            </form>
+            <div class="text-center py-3">
+              <a class="">
+               Already have an account?
+                <span class="text-red-500">Sign in!</span>
+              </a>
+            </div>
+            <hr class="mb-3 border-t" />
+            <div class="flex items-center justify-center gap-8">
+              <button class="btn btn-square btn-outline">
+                <i class="fa-brands fa-facebook-f text-2xl text-blue-500"></i>
+              </button>
+              <button class="btn btn-square btn-outline">
+                <i class="fa-brands fa-apple text-2xl"></i>
+              </button>
+              <button class="btn btn-square btn-outline">
+                <i class="fa-brands fa-google text-2xl text-red-400"></i>
+              </button>
             </div>
           </div>
         </div>
