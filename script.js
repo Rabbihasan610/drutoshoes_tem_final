@@ -153,28 +153,27 @@ document.addEventListener('DOMContentLoaded', function () {
         showSlider(sandalsBtn, sandalsSlider);
     });
 
-
     showSlider(casualsBtn, casualsSlider);
 });
 
 
 //product details 
 function goToDetails(productId) {
-    window.location.href = `/product-details.html?product_id=${productId}`;
+    window.location.href = `/Task-01/drutoshoes_template/product-details.html?product_id=${productId}`;
 }
 //product details 
 function gotoLogin() {
-    window.location.href = '/login.html'; // Corrected path
+    window.location.href = '/Task-01/drutoshoes_template/login.html'; // Corrected path
 }
 
 function gotoSignup() {
-    window.location.href = '/signup.html'; // Corrected path
+    window.location.href = '/Task-01/drutoshoes_template/signup.html'; // Corrected path
 }
 
 function gotoCart() {
-    window.location.href = '/cartPage.html'; // Corrected path
+    window.location.href = '/Task-01/drutoshoes_template/cartPage.html'; // Corrected path
 }
 
 function gotoCheckOutPage() {
-    window.location.href = '/CheckOutPage.html'; // Corrected path
+    window.location.href = '/Task-01/drutoshoes_template/CheckOutPage.html'; // Corrected path
 }
