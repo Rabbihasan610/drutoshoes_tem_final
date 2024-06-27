@@ -620,8 +620,4 @@ nav {
 
 
 
-@media (max-width: 640px) {
-  .menu-items{
-    display: flex !important;
-  }
-}
+
