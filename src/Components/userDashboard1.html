@@ -12,6 +12,8 @@
       rel="stylesheet"
       type="text/css"
     />
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
 
     <script
       src="https://kit.fontawesome.com/f07af11b35.js"
@@ -25,15 +27,329 @@
     </style>
   </head>
   <body>
-    <div class="drawer md:drawer-open">
+    <header
+      class="container mx-auto flex-no-wrap relative flex w-full items-center justify-between bg-zinc-50 py-2 shadow-dark-mild dark:bg-neutral-700 md:flex-wrap md:justify-start md:py-4"
+    >
+      <div class="flex w-full flex-wrap items-center justify-between px-3">
+        <!-- Hamburger button for mobile view -->
+        <button
+          class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 md:hidden"
+          type="button"
+          aria-controls="navbarSupportedContent1"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onclick="toggleDrawer()"
+        >
+          <!-- Hamburger icon -->
+          <span class="">
+            <i class="fa-solid fa-bars text-2xl"></i>
+          </span>
+        </button>
+
+        <!-- Collapsible navigation container -->
+        <div class="flex" id="navbarSupportedContent1">
+          <!-- left side location -->
+          <div
+            class="!visible hidden md:!flex md:basis-auto left-side items-center justify-center"
+          >
+            <i class="fa-solid fa-location-dot"></i>
+            <span class="locaton-text md:text-xs lg:text-lg">
+              Find A Store | Customer care: 09666200300
+            </span>
+          </div>
+          <div class="md:hidden">
+            <a href="#"
+              ><i class="fa-solid fa-magnifying-glass text-2xl"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Drawer for mobile view -->
+        <div
+          id="drawer"
+          class="fixed rounded-r-2xl top-16 left-0 z-50 w-11/12 h-auto bg-slate-800 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden"
+        >
+          <!-- Drawer content -->
+          <div class="flex justify-end p-4">
+            <button
+              class="border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200"
+              type="button"
+              aria-label="Close navigation"
+              onclick="toggleDrawer()"
+            >
+              <!-- Close icon -->
+              <span>
+                <i class="fa-solid fa-rectangle-xmark text-2xl text-white"></i>
+              </span>
+            </button>
+          </div>
+
+          <div class="flex items-center gap-10 text-white opacity-100">
+            <div class="avatar">
+              <div
+                class="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 ml-2"
+              >
+                <img
+                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                />
+              </div>
+            </div>
+            <div class="">
+              <h1 class="text-lg">MD Gousul Islam</h1>
+              <p class="text-base">gausulislam5@gmail.com</p>
+              <span class="text-xs">01785003901</span>
+            </div>
+          </div>
+          <hr class="bg-white mt-5" />
+          <ul
+            class="list-style-none p-4 text-white space-y-1 overflow-y-auto max-h-[calc(100vh-200px)]"
+          >
+            <li class="bg-[#3D455C] p-2 rounded-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-5">
+                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
+                  <h3>Change Theme</h3>
+                </div>
+                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
+              </div>
+            </li>
+            <li class="bg-[#3D455C] p-2 rounded-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-5">
+                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
+                  <h3>Change Theme</h3>
+                </div>
+                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
+              </div>
+            </li>
+            <li class="bg-[#3D455C] p-2 rounded-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-5">
+                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
+                  <h3>Change Theme</h3>
+                </div>
+                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
+              </div>
+            </li>
+            <li class="bg-[#3D455C] p-2 rounded-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-5">
+                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
+                  <h3>Change Theme</h3>
+                </div>
+                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
+              </div>
+            </li>
+            <li class="bg-[#3D455C] p-2 rounded-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-5">
+                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
+                  <h3>Change Theme</h3>
+                </div>
+                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
+              </div>
+            </li>
+            <li class="bg-[#3D455C] p-2 rounded-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-5">
+                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
+                  <h3>Change Theme</h3>
+                </div>
+                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
+              </div>
+            </li>
+            <li class="bg-[#3D455C] p-2 rounded-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-5">
+                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
+                  <h3>Change Theme</h3>
+                </div>
+                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
+              </div>
+            </li>
+            <li class="bg-[#3D455C] p-2 rounded-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-5">
+                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
+                  <h3>Change Theme</h3>
+                </div>
+                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
+              </div>
+            </li>
+            <li class="bg-[#3D455C] p-2 rounded-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-5">
+                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
+                  <h3>Change Theme</h3>
+                </div>
+                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
+              </div>
+            </li>
+            <li class="bg-[#3D455C] p-2 rounded-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-5">
+                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
+                  <h3>Change Theme</h3>
+                </div>
+                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- middle  logo img section -->
+
+        <div>
+          <a class="logo-img" href="" title="Logo">
+            <img
+              itemprop="logo"
+              data-src="//www.batabd.com/cdn/shop/files/logo-2_d42c63ce-1f56-4af2-a68f-a4cc3a91bd07.png?v=1614332440"
+              src="//www.batabd.com/cdn/shop/files/logo-2_d42c63ce-1f56-4af2-a68f-a4cc3a91bd07.png?v=1614332440"
+              alt="batabd"
+              class="lazyautosizes lazyloaded w-20 md:w-24 lg:w-full"
+              data-sizes="auto"
+            />
+          </a>
+        </div>
+
+        <!-- Right elements -->
+        <div class="relative flex items-center">
+          <a
+            class="me-4 text-neutral-600 dark:text-white"
+            href="#"
+            id="user-icon"
+          >
+            <div class="customer-links">
+              <div class="user-icons flex items-center justify-center">
+                <!-- Icon -->
+                <i class="fa-regular fa-user text-2xl"></i>
+                <i class="fa-solid fa-angle-down angle text-xl"></i>
+              </div>
+            </div>
+          </a>
+
+          <!-- user profile dropdown menu -->
+          <div
+            class="absolute right-[75%] top-8 z-10 p-3 w-44 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dropdown-menu"
+            role="menu"
+            aria-orientation="vertical"
+            aria-labelledby="menu-button"
+            tabindex="-1"
+            id="dropdown-menu"
+          >
+            <div class="py-1" role="none">
+              <a
+                href="#"
+                class="block px-5 py-1 text-sm text-gray-700 hover:bg-gray-300 hover:text-gray-700 rounded-md"
+                onclick="gotoLogin()"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-0"
+              >
+                <i class="fa-regular fa-user text-lg pr-4"></i>
+                Manage your Account</a
+              >
+              <a
+                href="#"
+                class="block px-5 py-1 text-sm text-gray-700 hover:bg-gray-300 hover:text-gray-700 rounded-md"
+                onclick="gotoLogin()"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-0"
+              >
+                <i class="fa-regular fa-user text-lg pr-4"></i>
+                Login</a
+              >
+              <a
+                href="#"
+                onclick="gotoSignup()"
+                class="block px-5 py-1 text-sm text-gray-700 hover:bg-gray-300 hover:text-gray-700 rounded-md"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-1"
+                ><i class="fa-regular fa-address-card text-lg pr-2"></i> Sign
+                Up</a
+              >
+              <button
+                type="submit"
+                class="block px-5 py-1 text-sm text-gray-700 hover:bg-gray-300 hover:text-gray-700 rounded-md"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-3"
+              >
+                <i class="fa-solid fa-ban text-lg pr-4"></i>Sign out
+              </button>
+            </div>
+          </div>
+
+          <!-- wishlist icon -->
+
+          <a
+            class="wishlist hidden sm:hiddden md:block"
+            href=""
+            title="My Wishlists"
+          >
+            <i class="fa-regular fa-heart text-2xl"></i>
+          </a>
+
+          <!-- WhatsApp icon -->
+          <a href="#" class="hidden sm:hidden md:block">
+            <img
+              src="https://cdn.shopify.com/s/files/1/2287/9679/files/whatsapp-icon.png?v=1631614102"
+              alt="whatsapp call"
+              class="w-6 mx-4"
+            />
+          </a>
+
+          <!-- cart icons  -->
+
+          <div
+            class="wrapper-top-cart relative inline-block transition-all duration-300 ease-in-out"
+            onclick="gotoCart()"
+          >
+            <i class="fa-solid fa-cart-shopping cursor-pointer text-2xl"></i>
+            <div class="badge badge-secondary">0</div>
+            <div class="dropdown-cart hidden sm:hidden md:hidden lg:block">
+              <div class="no-items sm:hidden md:hidden lg:block">
+                <p class="text-center mb-6">Your cart is currently empty.</p>
+                <div class="mb-3">
+                  <a class="btn-black" href="#"> Continue Shopping </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- searchbar -->
+
+          <div class="searchBar ml-3 hidden sm:hidden md:hidden lg:block">
+            <input type="text" placeholder="SEARCH" />
+            <i class="fa-solid fa-magnifying-glass search-icons"></i>
+          </div>
+        </div>
+        <!-- Right elements -->
+      </div>
+    </header>
+
+    <div class="drawer md:drawer-open max-w-screen-lg mx-auto py-5">
       <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content flex-col">
         <!-- Page content here -->
-        <label for="my-drawer-2" class="btn btn-primary drawer-button md:hidden"
-          ><i class="fa-solid fa-bars"></i
-        ></label>
         <div class="mx-4 sm:mx-8 xl:mx-auto">
-          <h1 class="border-b py-6 text-4xl font-semibold">User Dashboard</h1>
+          <div class="flex items-center lg:justify-start justify-between">
+            <div>
+              <label
+                for="my-drawer-2"
+                class="btn btn-primary drawer-button md:hidden"
+                ><i class="fa-solid fa-bars"></i
+              ></label>
+            </div>
+            <div>
+              <h1 class="border-b py-6 text-4xl font-semibold">
+                User Dashboard
+              </h1>
+            </div>
+          </div>
+
           <div class="grid grid-cols-8 pt-3">
             <div
               class="col-span-8 overflow-hidden rounded-xl sm:bg-gray-50 sm:px-8 sm:shadow"
@@ -325,7 +641,6 @@
                         </div>
                       </div>
                     </div>
-
                   </div>
 
                   <div class="mt-6 flex items-center justify-end gap-x-6">
@@ -488,39 +803,164 @@
           </li>
           <li
             id="my-orders"
-            class="mt-5 cursor-pointer border-l-2 border-transparent px-2 py-2 font-semibold transition hover:border-l-blue-700 hover:text-blue-700"
+            class="mt-3 cursor-pointer border-l-2 border-transparent px-2 py-2 font-semibold transition hover:border-l-blue-700 hover:text-blue-700"
             onclick="showContent('orders', this)"
           >
-            My Orders
+            <button
+              id="manage-account-btn"
+              class="w-full text-left transition-all duration-300 ease-in-out"
+            >
+              My Orders
+            </button>
           </li>
           <li
-            class="mt-5 cursor-pointer border-l-2 border-transparent px-2 py-2 font-semibold transition hover:border-l-blue-700 hover:text-blue-700"
+            class="mt-3 cursor-pointer border-l-2 border-transparent px-2 py-2 font-semibold transition hover:border-l-blue-700 hover:text-blue-700"
             onclick="showContent('reviews', this)"
           >
-            My Reviews
+            <button
+              id="manage-account-btn"
+              class="w-full text-left transition-all duration-300 ease-in-out"
+            >
+              My Reviews
+            </button>
           </li>
           <li
-            class="mt-5 cursor-pointer border-l-2 border-transparent px-2 py-2 font-semibold transition hover:border-l-blue-700 hover:text-blue-700"
+            class="mt-3 cursor-pointer border-l-2 border-transparent px-2 py-2 font-semibold transition hover:border-l-blue-700 hover:text-blue-700"
             onclick="showContent('settings', this)"
           >
-            Account Settings
+            <button
+              id="manage-account-btn"
+              class="w-full text-left transition-all duration-300 ease-in-out"
+            >
+              Account Settings
+            </button>
           </li>
           <li
-            class="mt-5 cursor-pointer border-l-2 border-transparent px-2 py-2 font-semibold transition hover:border-l-blue-700 hover:text-blue-700"
+            class="mt-3 cursor-pointer border-l-2 border-transparent px-2 py-2 font-semibold transition hover:border-l-blue-700 hover:text-blue-700"
             onclick="showContent('billing', this)"
           >
-            Billing
+            <button
+              id="manage-account-btn"
+              class="w-full text-left transition-all duration-300 ease-in-out"
+            >
+              Billing
+            </button>
           </li>
           <li
-            class="mt-5 cursor-pointer border-l-2 border-transparent px-2 py-2 font-semibold transition hover:border-l-blue-700 hover:text-blue-700"
+            class="mt-3 cursor-pointer border-l-2 border-transparent px-2 py-2 font-semibold transition hover:border-l-blue-700 hover:text-blue-700"
             onclick="showContent('notifications', this)"
           >
-            Notifications
+            <button
+              id="manage-account-btn"
+              class="w-full text-left transition-all duration-300 ease-in-out"
+            >
+              Notifications
+            </button>
           </li>
         </ul>
       </div>
     </div>
 
+    <footer class="footer p-10 bg-black text-white">
+      <nav class="footer-nav">
+        <h6 class="footer-title">ABOUT</h6>
+        <a class="">About Us</a>
+        <a class="">Careers</a>
+        <a class="">Awards & Recognition</a>
+        <a class="">Investors</a>
+        <a class="">Bata Industrials</a>
+        <a class="">Share Department</a>
+      </nav>
+      <nav class="footer-nav">
+        <h6 class="footer-title">INFORMATION</h6>
+        <a class="">TERMS & CONDITIONS</a>
+        <a class="">Payment Options</a>
+        <a class="">Privacy Policy</a>
+        <a class="">Franchise Programme</a>
+        <a class="">Coverage areas</a>
+      </nav>
+      <nav class="footer-nav">
+        <h6 class="footer-title">POPULAR BRANDS</h6>
+        <a class="">Bata</a>
+        <a class="">Hush Puppies</a>
+        <a class="">Power</a>
+        <a class="">Comfit</a>
+        <a class="">Weinbrenner</a>
+        <a class="">North Star</a>
+        <a class="">Marie Claire</a>
+      </nav>
+      <nav class="footer-nav">
+        <h6 class="footer-title">CUSTOMER SERVICE</h6>
+        <a class="">FAQs</a>
+        <a class="">MyBata</a>
+        <a class="">Bata Stores</a>
+        <a class="">All About Feet</a>
+        <a class="">Contact Info</a>
+        <a class="">Report Issue</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">INFO</h6>
+        <a class="">Bata Shoe Company</a>
+        <a class="">
+          Bangladesh Ltd. <br />
+          Tongi Gazipur, Bangladesh.
+        </a>
+        <a class="">Call us at: 09666200300</a>
+        <a class="">
+          (9am-9pm) <br />
+          Email: bd.customercare@bata.com
+        </a>
+      </nav>
+    </footer>
+
+    <footer
+      class="footer px-10 pt-4 border-t bg-black text-white border-base-300 footer2"
+    >
+      <aside class="items-center grid-flow-col">
+        <p>Sign up for our Newsletter</p>
+      </aside>
+      <nav class="md:place-self-center md:justify-self-end">
+        <div class="grid grid-flow-col gap-4">
+          <i class="fa-brands fa-twitter text-2xl"></i>
+          <i class="fa-brands fa-youtube text-2xl"></i>
+          <i class="fa-brands fa-facebook text-2xl"></i>
+        </div>
+      </nav>
+    </footer>
+
+    <footer class="footer footer-center px-10 py-2 bg-black text-white rounded">
+      <p>
+        © 2023 Bata Shoe Company Bangladesh Ltd. Tongi, Postal code - 1710,
+        Gazipur, Bangladesh
+      </p>
+      <nav>
+        <div class="grid grid-flow-col gap-4">
+          <a>
+            <img
+              src="https://www.batabd.com/cdn/shop/files/visa-sq_x300.png?v=1614293775"
+              alt=""
+              class="w-8"
+            />
+          </a>
+          <a>
+            <img
+              src="https://www.batabd.com/cdn/shop/files/masterc-sq_x300.png?v=1614293775"
+              alt=""
+              class="w-8"
+            />
+          </a>
+          <a>
+            <img
+              src="https://www.batabd.com/cdn/shop/files/amex-sq_x300.png?v=1614293775"
+              alt=""
+              class="w-8"
+            />
+          </a>
+        </div>
+      </nav>
+    </footer>
+
     <script src="/Task-01/userDashboard.js"></script>
+    <script src="/Task-01//drutoshoes_template/src/Components/script.js"></script>
   </body>
 </html>
