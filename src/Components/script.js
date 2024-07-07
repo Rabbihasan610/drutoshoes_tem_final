@@ -157,6 +157,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
 //product details 
 function goToDetails(productId) {
     window.location.href = `/Task-01/drutoshoes_template/product-details.html?product_id=${productId}`;
