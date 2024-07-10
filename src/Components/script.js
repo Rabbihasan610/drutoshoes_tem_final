@@ -1,180 +1,240 @@
 // header user dropdown menu
-document.getElementById('user-icon').addEventListener('click', function (event) {
+document
+  .getElementById("user-icon")
+  .addEventListener("click", function (event) {
     event.preventDefault();
-    var dropdownMenu = document.getElementById('dropdown-menu');
-    dropdownMenu.classList.toggle('show');
-});
+    var dropdownMenu = document.getElementById("dropdown-menu");
+    dropdownMenu.classList.toggle("show");
+  });
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function (event) {
-    if (!event.target.matches('#user-icon') && !event.target.closest('#user-icon')) {
-        var dropdowns = document.getElementsByClassName('dropdown-menu');
-        for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
+  if (
+    !event.target.matches("#user-icon") &&
+    !event.target.closest("#user-icon")
+  ) {
+    var dropdowns = document.getElementsByClassName("dropdown-menu");
+    for (var i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains("show")) {
+        openDropdown.classList.remove("show");
+      }
     }
-}
+  }
+};
 
 // header card dropdown menu js
 
 document.addEventListener("DOMContentLoaded", function () {
-    const cartIcon = document.querySelector(".wrapper-top-cart");
-    const dropdownCart = document.getElementById("dropdown-cart");
+  const cartIcon = document.querySelector(".wrapper-top-cart");
+  const dropdownCart = document.getElementById("dropdown-cart");
 
-    cartIcon.addEventListener("mouseenter", function () {
-        dropdownCart.style.display = "block";
-    });
+  cartIcon.addEventListener("mouseenter", function () {
+    dropdownCart.style.display = "block";
+  });
 
-    cartIcon.addEventListener("mouseleave", function () {
-        dropdownCart.style.display = "none";
-    });
+  cartIcon.addEventListener("mouseleave", function () {
+    dropdownCart.style.display = "none";
+  });
+});
+
+// header mobile search menu
+document.addEventListener("DOMContentLoaded", function () {
+  const searchBar = document.getElementById("mobileSearchBar");
+  const searchIcon = document.querySelector(".md\\:hidden a");
+
+  searchIcon.addEventListener("click", function (event) {
+    event.preventDefault();
+    searchBar.classList.remove("hidden");
+    searchBar.classList.add("opacity-100");
+    searchIcon.classList.add("hidden");
+    searchBar.querySelector("input").focus();
+  });
+
+  document.addEventListener("click", function (event) {
+    if (
+      !searchBar.contains(event.target) &&
+      !searchIcon.contains(event.target)
+    ) {
+      searchBar.classList.add("hidden");
+      searchBar.classList.remove("opacity-100");
+      searchIcon.classList.remove("hidden");
+    }
+  });
+
+  searchBar.querySelector("input").addEventListener("blur", function () {
+    searchBar.classList.add("hidden");
+    searchBar.classList.remove("opacity-100");
+    searchIcon.classList.remove("hidden");
+  });
+});
+
+// navbar swipper start
+$(document).ready(function () {
+  $(".carouselNavbar").slick({
+    slidesToShow: 9,
+    slidesToScroll: 1,
+    infinite: false,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 680,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
 });
 
 // banner swipper page js
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    loop: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    },
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
 });
-
 
 // header responsive drawer
 function toggleDrawer() {
-    const drawer = document.getElementById('drawer');
-    if (drawer.classList.contains('-translate-x-full')) {
-        drawer.classList.remove('-translate-x-full');
-        drawer.classList.add('translate-x-0');
-    } else {
-        drawer.classList.remove('translate-x-0');
-        drawer.classList.add('-translate-x-full');
-    }
+  const drawer = document.getElementById("drawer");
+  if (drawer.classList.contains("-translate-x-full")) {
+    drawer.classList.remove("-translate-x-full");
+    drawer.classList.add("translate-x-0");
+  } else {
+    drawer.classList.remove("translate-x-0");
+    drawer.classList.add("-translate-x-full");
+  }
 }
 
-// slick slider just landed page 
+// slick slider just landed page
 
 $(document).ready(function () {
-    $(".slider").slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        arrows: true,
-        infinite: false,
-        prevArrow: '<button class="slick-prev"><i class="fa fa-angle-left"></i></button>',
-        nextArrow: '<button class="slick-next"><i class="fa fa-angle-right"></i></button>',
-        dots: false,
-        responsive: [
-            {
-                breakpoint: 1024, // large devices
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 768, // medium devices
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 480, // small devices
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    });
+  $(".slider").slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: true,
+    infinite: false,
+    prevArrow:
+      '<button class="slick-prev"><i class="fa fa-angle-left"></i></button>',
+    nextArrow:
+      '<button class="slick-next"><i class="fa fa-angle-right"></i></button>',
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 1024, // large devices
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768, // medium devices
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480, // small devices
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
 });
 
+// just landed page js card start
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll("[data-slider]");
+  const sliders = document.querySelectorAll(".slider");
 
-// just landed page js card 
+  function showSlider(activeBtn) {
+    // Remove active class from all buttons
+    buttons.forEach((btn) => btn.classList.remove("active"));
+    activeBtn.classList.add("active");
 
-document.addEventListener('DOMContentLoaded', function () {
-    const casualsBtn = document.getElementById('btn-casuals');
-    const sneakersBtn = document.getElementById('btn-sneakers');
-    const sandalsBtn = document.getElementById('btn-sandals');
+    // Hide all sliders
+    sliders.forEach((slider) => slider.classList.add("hidden"));
 
-    const casualsSlider = document.getElementById('slider-casuals');
-    const sneakersSlider = document.getElementById('slider-sneakers');
-    const sandalsSlider = document.getElementById('slider-sandals');
+    // Show the active slider
+    const activeSliderId = "slider-" + activeBtn.getAttribute("data-slider");
+    const activeSlider = document.getElementById(activeSliderId);
+    activeSlider.classList.remove("hidden");
 
-    function showSlider(activeBtn, activeSlider) {
-        // Remove active class from all buttons
-        [casualsBtn, sneakersBtn, sandalsBtn].forEach(btn => btn.classList.remove('active'));
-        activeBtn.classList.add('active');
+    // Set width for each slider item
+    const sliderItems = activeSlider.getElementsByClassName("slider-item");
+    Array.from(sliderItems).forEach((item) => {
+      item.style.width = "236px";
+    });
 
-        // Hide all sliders
-        [casualsSlider, sneakersSlider, sandalsSlider].forEach(slider => slider.classList.add('hidden'));
-
-        // Show the active slider
-        activeSlider.classList.remove('hidden');
-
-        // Set width for each slider item
-        const sliderItems = activeSlider.getElementsByClassName('slider-item');
-        Array.from(sliderItems).forEach(item => {
-            item.style.width = '236px';
-        });
-
-        // Add class to the slick-track div
-        const slickTrack = activeSlider.querySelector('.slick-track');
-        if (slickTrack) {
-            slickTrack.classList.add('content');
-        }
+    // Add class to the slick-track div
+    const slickTrack = activeSlider.querySelector(".slick-track");
+    if (slickTrack) {
+      slickTrack.classList.add("content");
     }
+  }
 
-    casualsBtn.addEventListener('click', function () {
-        showSlider(casualsBtn, casualsSlider);
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      showSlider(btn);
     });
+  });
 
-    sneakersBtn.addEventListener('click', function () {
-        showSlider(sneakersBtn, sneakersSlider);
-    });
-
-    sandalsBtn.addEventListener('click', function () {
-        showSlider(sandalsBtn, sandalsSlider);
-    });
-
-    showSlider(casualsBtn, casualsSlider);
+  // Show the initial slider
+  showSlider(buttons[0]);
 });
 
+// just landed page js card end
 
-
-//product details 
+//product details
 function goToDetails(productId) {
-    window.location.href = `/Task-01/drutoshoes_template/product-details.html?product_id=${productId}`;
+  window.location.href = `/Task-01/drutoshoes_template/product-details.html?product_id=${productId}`;
 }
-//product details 
+//product details
 function gotoLogin() {
-    window.location.href = '/Task-01/drutoshoes_template/login.html'; // Corrected path
+  window.location.href = "/Task-01/drutoshoes_template/login.html"; // Corrected path
 }
 
 function gotoSignup() {
-    window.location.href = '/Task-01/drutoshoes_template/signup.html'; // Corrected path
+  window.location.href = "/Task-01/drutoshoes_template/signup.html"; // Corrected path
 }
 
 function gotoCart() {
-    window.location.href = '/Task-01/drutoshoes_template/cartPage.html'; // Corrected path
+  window.location.href = "/Task-01/drutoshoes_template/cartPage.html"; // Corrected path
 }
 
 function gotoCheckOutPage() {
-    window.location.href = '/Task-01/drutoshoes_template/CheckOutPage.html'; // Corrected path
+  window.location.href = "/Task-01/drutoshoes_template/CheckOutPage.html"; // Corrected path
 }

@@ -170,7 +170,6 @@ header {
     transform: translateY(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
   }
-  
 }
 
 .wrapper-top-cart:hover .dropdown-cart {
@@ -316,28 +315,6 @@ nav {
 }
 
 /* men nav collection */
-.men-nav-dropdown {
-  position: absolute;
-  background-color: #ffffff;
-  z-index: 9;
-  min-width: 1200px;
-  width: 100%;
-  height: auto;
-  text-align: left;
-  border-radius: 3px;
-  margin-top: 50px;
-  visibility: hidden;
-  opacity: 1;
-  transform: translateX(-25%);
-  transition: all 0.3s ease-in-out;
-}
-
-.menu-items li:hover .men-nav-dropdown {
-  margin-top: 24px;
-  visibility: visible;
-  opacity: 1;
-  transition: all 0.3s ease-in-out;
-}
 
 .brands-dropdown h6 {
   font-size: 13px;
@@ -348,10 +325,6 @@ nav {
   opacity: 0.6;
 }
 
-.men-nav-dropdown .brands-dropdown li {
-  padding: 6px 20px;
-}
-
 .brands-dropdown span {
   font-size: 12px;
   color: #000000;
@@ -359,13 +332,7 @@ nav {
   font-weight: normal;
 }
 
-.men-nav-dropdown .brands-dropdown > li:first-child > span {
-  color: red !important;
-}
-
 /* nav section end */
-
-
 
 /* banner swipper  section start */
 .swiper-button-next:after,
@@ -620,10 +587,40 @@ nav {
   visibility: visible;
 }
 
-
 /* products detailspage start */
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap; /* Prevent line breaks */
+  cursor: pointer; /* Optional: Provide visual feedback on hover */
+}
 
+.slick-list {
+  padding: 0;
+  text-align: center;
+}
 
+.slick-slider .slick-track > .carousel-item:before {
+  position: absolute !important;
+  left: 0 !important;
+  width: 0 !important;
+  bottom: -2px;
+  height: 1px;
+  content: "";
+  display: block;
+  transition: width 0.3s ease;
+  visibility: hidden;
+  background-color: black;
+}
 
+.slick-slider .slick-track > .carousel-item:hover:before,
+.slick-slider .slick-track > .carousel-item:focus:before,
+.slick-slider .slick-track > .carousel-item:focus-within:before {
+  width: 100% !important;
+  visibility: visible !important;
+}
 
-
+.slick-list .slick-track > .carousel-item:first-child {
+  color: red;
+}
