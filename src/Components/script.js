@@ -69,38 +69,52 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// navbar swipper start
-$(document).ready(function () {
-  $(".carouselNavbar").slick({
-    slidesToShow: 9,
-    slidesToScroll: 1,
-    infinite: false,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 5,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 6,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 680,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+// navbar drawer start
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.getElementById("menu-toggle");
+  const drawerMenu = document.getElementById("drawer-menu");
+  const closeDrawer = document.getElementById("close-drawer");
+  const menuItemMen = document.getElementById("menu-item-men");
+  const submenuMen = document.getElementById("submenu-men");
+  const backToMainMenu = document.getElementById("back-to-main-menu");
+
+  menuToggle.addEventListener("click", function () {
+    drawerMenu.classList.toggle("-translate-x-full");
+  });
+
+  closeDrawer.addEventListener("click", function () {
+    drawerMenu.classList.add("-translate-x-full");
+  });
+
+  menuItemMen.addEventListener("click", function () {
+    drawerMenu.classList.add("-translate-x-full");
+    submenuMen.classList.remove("-translate-x-full");
+  });
+
+  backToMainMenu.addEventListener("click", function () {
+    submenuMen.classList.add("-translate-x-full");
+    drawerMenu.classList.remove("-translate-x-full");
+  });
+
+  // Close drawer when clicking outside
+  window.addEventListener("click", function (e) {
+    if (
+      drawerMenu.classList.contains("-translate-x-full") &&
+      submenuMen.classList.contains("-translate-x-full")
+    )
+      return;
+    if (
+      !drawerMenu.contains(e.target) &&
+      !submenuMen.contains(e.target) &&
+      !menuToggle.contains(e.target)
+    ) {
+      drawerMenu.classList.add("-translate-x-full");
+      submenuMen.classList.add("-translate-x-full");
+    }
   });
 });
+
+// navbar drawer end
 
 // banner swipper page js
 
@@ -135,7 +149,6 @@ function toggleDrawer() {
 }
 
 // slick slider just landed page
-
 $(document).ready(function () {
   $(".slider").slick({
     slidesToShow: 5,
@@ -215,8 +228,100 @@ document.addEventListener("DOMContentLoaded", function () {
   // Show the initial slider
   showSlider(buttons[0]);
 });
-
 // just landed page js card end
+
+//best sellers sliker js start
+$(document).ready(function () {
+  $(".sliderBestSellers").slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: false,
+    infinite: false,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 1024, // large devices
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768, // medium devices
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480, // small devices
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+});
+
+// bata on instagram sliker js start
+$(document).ready(function () {
+  $(".sliderBataOnInstagram").slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: false,
+    infinite: false,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 1024, // large devices
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768, // medium devices
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480, // small devices
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+});
+
+//filter drawer page start
+const drawerToggleCheckbox = document.getElementById("my-drawer-2");
+const drawerContent = document.querySelector(".drawer-content");
+
+// Close the drawer when clicking outside of it
+document.addEventListener("click", (event) => {
+  if (!drawerContent.contains(event.target) && !drawerToggleCheckbox.contains(event.target)) {
+    drawerToggleCheckbox.checked = false;
+  }
+});
+
+// Prevent the drawer from closing when clicking inside the drawer content
+drawerContent.addEventListener("click", (event) => {
+  event.stopPropagation();
+});
+
+//filter drawer page end
+
+
+///
 
 //product details
 function goToDetails(productId) {

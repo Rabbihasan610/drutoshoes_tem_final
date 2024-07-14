@@ -4,18 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  </head>
-  <!-- tailwind link -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="./output.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
 
-  <!-- daisyui link -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css"
-    rel="stylesheet"
-    type="text/css"
-  />
+    <!-- css link -->
+    <link href="./style.css" rel="stylesheet" />
+
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet" />
+
+    <!-- daisyui link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- google font-link -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+
+    <!-- font awesome link -->
+    <script
+      src="https://kit.fontawesome.com/f07af11b35.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- swipper link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- slick slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  </head>
+
   <body>
     <header
       class="container mx-auto flex-no-wrap relative flex w-full items-center justify-between bg-zinc-50 py-2 shadow-dark-mild dark:bg-neutral-700 md:flex-wrap md:justify-start md:py-4"
@@ -220,7 +257,7 @@
 
           <!-- user profile dropdown menu -->
           <div
-            class="absolute right-[75%] top-8 z-10 p-3 w-44 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dropdown-menu"
+            class="absolute right-[75%] top-8 z-10 p-3 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dropdown-menu"
             role="menu"
             aria-orientation="vertical"
             aria-labelledby="menu-button"
@@ -237,7 +274,7 @@
                 id="menu-item-0"
               >
                 <i class="fa-regular fa-user text-lg pr-4"></i>
-                Manage your Account</a
+                Account</a
               >
               <a
                 href="#"
@@ -323,12 +360,10 @@
       <h1 class="font-bold text-4xl mb-4">Responsive Product card grid</h1>
     </div>
 
-    <!-- ✅ Grid Section - Starts Here 👇 -->
     <section
       id="Projects"
       class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5"
     >
-      <!--   ✅ Product card 1 - Starts Here 👇 -->
       <div
         class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
       >
@@ -372,9 +407,9 @@
           </div>
         </a>
       </div>
-      <!--   🛑 Product card 1 - Ends Here  -->
+      <!--    Product card 1 - Ends Here  -->
 
-      <!--   ✅ Product card 2 - Starts Here 👇 -->
+      <!--   Product card 2 - Starts Here  -->
       <div
         class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
       >
@@ -418,9 +453,9 @@
           </div>
         </a>
       </div>
-      <!--   🛑 Product card 2- Ends Here  -->
+      <!--    Product card 2- Ends Here  -->
 
-      <!--   ✅ Product card 3 - Starts Here 👇 -->
+      <!--    Product card 3 - Starts Here  -->
       <div
         class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
       >
@@ -464,9 +499,9 @@
           </div>
         </a>
       </div>
-      <!--   🛑 Product card 3 - Ends Here  -->
+      <!--    Product card 3 - Ends Here  -->
 
-      <!--   ✅ Product card 4 - Starts Here 👇 -->
+      <!--    Product card 4 - Starts Here  -->
       <div
         class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
       >
@@ -510,9 +545,9 @@
           </div>
         </a>
       </div>
-      <!--   🛑 Product card 4 - Ends Here  -->
+      <!--    Product card 4 - Ends Here  -->
 
-      <!--   ✅ Product card 5 - Starts Here 👇 -->
+      <!--    Product card 5 - Starts Here  -->
       <div
         class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
       >
@@ -556,9 +591,8 @@
           </div>
         </a>
       </div>
-      <!--   🛑 Product card 5 - Ends Here  -->
-
-      <!--   ✅ Product card 6 - Starts Here 👇 -->
+      <!--    Product card 5 - Ends Here  -->
+      <!--    Product card 6 - Starts Here  -->
       <div
         class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
       >
@@ -602,10 +636,10 @@
           </div>
         </a>
       </div>
-      <!--   🛑 Product card 6 - Ends Here  -->
+      <!--    Product card 6 - Ends Here  -->
     </section>
 
-    <!-- 🛑 Grid Section - Ends Here -->
+    <!-- Grid Section - Ends Here -->
 
     <!-- credit -->
 
@@ -710,13 +744,6 @@
 
     <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
     <script src="/Task-01//drutoshoes_template/src/Components/script.js"></script>
-    <script>
-      kofiWidgetOverlay.draw("mohamedghulam", {
-        type: "floating-chat",
-        "floating-chat.donateButton.text": "Support me",
-        "floating-chat.donateButton.background-color": "#323842",
-        "floating-chat.donateButton.text-color": "#fff",
-      });
-    </script>
+    <script src="../Components/script.js"></script>
   </body>
 </html>

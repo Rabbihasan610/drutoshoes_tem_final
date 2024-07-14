@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task</title>
+    <title>Home page</title>
 
     <!-- css link -->
     <link href="./style.css" rel="stylesheet" />
@@ -55,7 +55,6 @@
 
   <body>
     <!-- header section start -->
-
     <header
       class="container mx-auto flex-no-wrap relative flex w-full items-center justify-between bg-zinc-50 py-2 shadow-dark-mild dark:bg-neutral-700 md:flex-wrap md:justify-start md:py-4"
     >
@@ -63,11 +62,7 @@
         <!-- Hamburger button for mobile view -->
         <button
           class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 md:hidden"
-          type="button"
-          aria-controls="navbarSupportedContent1"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          onclick="toggleDrawer()"
+          id="menu-toggle"
         >
           <!-- Hamburger icon -->
           <span class="">
@@ -94,142 +89,11 @@
         </div>
 
         <!-- Drawer for mobile view -->
-        <div
-          id="drawer"
-          class="fixed rounded-r-2xl top-16 left-0 z-50 w-11/12 h-auto bg-slate-800 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden"
-        >
-          <!-- Drawer content -->
-          <div class="flex justify-end p-4">
-            <button
-              class="border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200"
-              type="button"
-              aria-label="Close navigation"
-              onclick="toggleDrawer()"
-            >
-              <!-- Close icon -->
-              <span>
-                <i class="fa-solid fa-rectangle-xmark text-2xl text-white"></i>
-              </span>
-            </button>
-          </div>
-
-          <div class="flex items-center gap-10 text-white opacity-100">
-            <div class="avatar">
-              <div
-                class="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 ml-2"
-              >
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-                />
-              </div>
-            </div>
-            <div class="">
-              <h1 class="text-lg">MD Gousul Islam</h1>
-              <p class="text-base">gausulislam5@gmail.com</p>
-              <span class="text-xs">01785003901</span>
-            </div>
-          </div>
-          <hr class="bg-white mt-5" />
-          <ul
-            class="list-style-none p-4 text-white space-y-1 overflow-y-auto max-h-[calc(100vh-200px)]"
-          >
-            <li class="bg-[#3D455C] p-2 rounded-md">
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-5">
-                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
-                  <h3>Change Theme</h3>
-                </div>
-                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
-              </div>
-            </li>
-            <li class="bg-[#3D455C] p-2 rounded-md">
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-5">
-                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
-                  <h3>Change Theme</h3>
-                </div>
-                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
-              </div>
-            </li>
-            <li class="bg-[#3D455C] p-2 rounded-md">
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-5">
-                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
-                  <h3>Change Theme</h3>
-                </div>
-                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
-              </div>
-            </li>
-            <li class="bg-[#3D455C] p-2 rounded-md">
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-5">
-                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
-                  <h3>Change Theme</h3>
-                </div>
-                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
-              </div>
-            </li>
-            <li class="bg-[#3D455C] p-2 rounded-md">
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-5">
-                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
-                  <h3>Change Theme</h3>
-                </div>
-                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
-              </div>
-            </li>
-            <li class="bg-[#3D455C] p-2 rounded-md">
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-5">
-                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
-                  <h3>Change Theme</h3>
-                </div>
-                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
-              </div>
-            </li>
-            <li class="bg-[#3D455C] p-2 rounded-md">
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-5">
-                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
-                  <h3>Change Theme</h3>
-                </div>
-                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
-              </div>
-            </li>
-            <li class="bg-[#3D455C] p-2 rounded-md">
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-5">
-                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
-                  <h3>Change Theme</h3>
-                </div>
-                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
-              </div>
-            </li>
-            <li class="bg-[#3D455C] p-2 rounded-md">
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-5">
-                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
-                  <h3>Change Theme</h3>
-                </div>
-                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
-              </div>
-            </li>
-            <li class="bg-[#3D455C] p-2 rounded-md">
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-5">
-                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
-                  <h3>Change Theme</h3>
-                </div>
-                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
-              </div>
-            </li>
-          </ul>
-        </div>
 
         <!-- middle  logo img section -->
 
         <div>
-          <a class="logo-img" href="" title="Logo">
+          <a class="logo-img" title="Logo">
             <img
               itemprop="logo"
               data-src="//www.batabd.com/cdn/shop/files/logo-2_d42c63ce-1f56-4af2-a68f-a4cc3a91bd07.png?v=1614332440"
@@ -244,8 +108,7 @@
         <!-- Right elements -->
         <div class="relative flex items-center">
           <a
-            class="me-4 text-neutral-600 dark:text-white"
-            href="#"
+            class="me-4 text-neutral-600 dark:text-white cursor-pointer"
             id="user-icon"
           >
             <div class="customer-links">
@@ -259,7 +122,7 @@
 
           <!-- user profile dropdown menu -->
           <div
-            class="absolute right-[75%] top-8 z-10 p-3 w-44 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dropdown-menu"
+            class="absolute right-[75%] top-8 z-20 p-3 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dropdown-menu"
             role="menu"
             aria-orientation="vertical"
             aria-labelledby="menu-button"
@@ -276,7 +139,7 @@
                 id="menu-item-0"
               >
                 <i class="fa-regular fa-user text-lg pr-4"></i>
-                Manage your Account</a
+                Account</a
               >
               <a
                 href="#"
@@ -299,15 +162,16 @@
                 ><i class="fa-regular fa-address-card text-lg pr-2"></i> Sign
                 Up</a
               >
-              <button
-                type="submit"
+              <a
+                href="#"
+                onclick="gotoSignup()"
                 class="block px-5 py-1 text-sm text-gray-700 hover:bg-gray-300 hover:text-gray-700 rounded-md"
                 role="menuitem"
                 tabindex="-1"
-                id="menu-item-3"
+                id="menu-item-1"
               >
-                <i class="fa-solid fa-ban text-lg pr-4"></i>Sign out
-              </button>
+                <i class="fa-solid fa-ban text-lg pr-2"></i> Sign Out</a
+              >
             </div>
           </div>
 
@@ -358,516 +222,314 @@
         <!-- Right elements -->
       </div>
     </header>
-
     <!-- headder section complete -->
 
     <!-- nav section start-->
+    <nav class="relative w-full z-10 lg:py-8 lg:px-6">
+      <div class="container mx-auto">
+        <!-- Menu items for large devices -->
+        <div class="items-center hidden lg:block">
+          <ul
+            id="menu-items"
+            class="flex justify-between items-center menu-items whitespace-nowrap"
+          >
+            <li class="inline-block align-middle ml-6">
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >SNEAKER STUDIO</a
+              >
+            </li>
+            <!-- Existing menu items -->
+            <li class="inline-block align-middle ml-6">
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >BRANDS</a
+              >
+            </li>
+            <li class="inline-block align-middle ml-6 group">
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >MEN</a
+              >
+              <div
+                class="absolute z-[500] bg-white shadow-lg py-5 px-8 transition-all duration-300 ease-in-out mt-6 invisible opacity-0 space-y-4 left-1/2 transform -translate-x-1/2 max-w-[1100px] w-full flex justify-between items-center flex-wrap p-5 group-hover:mt-0 group-hover:visible group-hover:opacity-100"
+              >
+                <div>
+                  <h4
+                    class="text-base font-medium py-3 leading-none text-[#ea4636]"
+                  >
+                    Men's Fashion
+                  </h4>
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                        class="inline-block py-2 text-[15px] text-gray-600 transition-colors duration-300 ease-in-out capitalize"
+                        >Product List</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4
+                    class="text-base font-medium py-3 leading-none text-[#ea4636]"
+                  >
+                    Women's Fashion
+                  </h4>
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                        class="inline-block py-2 text-[15px] text-gray-600 transition-colors duration-300 ease-in-out capitalize"
+                        >Product List</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4
+                    class="text-base font-medium py-3 leading-none text-[#ea4636]"
+                  >
+                    Home, Kitchen
+                  </h4>
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                        class="inline-block py-2 text-[15px] text-gray-600 transition-colors duration-300 ease-in-out capitalize"
+                        >Product List</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4
+                    class="text-base font-medium py-3 leading-none text-[#ea4636]"
+                  >
+                    Home, Kitchen
+                  </h4>
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                        class="inline-block py-2 text-[15px] text-gray-600 transition-colors duration-300 ease-in-out capitalize"
+                        >Product List</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="inline-block align-middle ml-6 group">
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >WOMEN</a
+              >
+            </li>
+            <li class="inline-block align-middle ml-6 group">
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >CHILDREN</a
+              >
+            </li>
+            <li class="inline-block align-middle ml-6 group">
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >ACCESSORIES</a
+              >
+            </li>
+            <li class="inline-block align-middle ml-6 group">
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >BATA CLUB</a
+              >
+            </li>
+            <li class="inline-block align-middle ml-6">
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >B-MAG</a
+              >
+            </li>
+            <li class="inline-block align-middle ml-6">
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >FRANCHISE</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
 
-    <nav class="container mx-auto static">
-      <div class="nav-menu p-6 static overflow-hidden hover:overflow-visible">
-        <ul class="flex items-center justify-between menu-items space-x-4">
-          <li class="flex-shrink-0" id="first-item">SNEAKER STUDIO</li>
-          <li class="flex-shrink-0 relative" id="second-item">
-            BRANDS
-            <div class="brands-nav-dropdown">
-              <ul class="brands-dropdown">
-                <li class="menu-lv-2">
-                  <i class="fa-solid fa-angle-right"></i>
-                  <span>Power</span>
-                </li>
-                <li class="menu-lv-2">
-                  <i class="fa-solid fa-angle-right"></i>
-                  <span>North star</span>
-                </li>
-                <li class="menu-lv-2">
-                  <i class="fa-solid fa-angle-right"></i>
-                  <span>Bata Red Label</span>
-                </li>
-                <li class="menu-lv-2">
-                  <i class="fa-solid fa-angle-right"></i>
-                  <span>Adidas</span>
-                </li>
-                <li class="menu-lv-2">
-                  <i class="fa-solid fa-angle-right"></i>
-                  <span>Bata</span>
-                </li>
-                <li class="menu-lv-2">
-                  <i class="fa-solid fa-angle-right"></i>
-                  <span>Bata 3D</span>
-                </li>
-                <li class="menu-lv-2">
-                  <i class="fa-solid fa-angle-right"></i>
-                  <span>Comfit</span>
-                </li>
-                <li class="menu-lv-2">
-                  <i class="fa-solid fa-angle-right"></i>
-                  <span>Hush puppies</span>
-                </li>
-                <li class="menu-lv-2">
-                  <i class="fa-solid fa-angle-right"></i>
-                  <span>Weinbrenner</span>
-                </li>
-                <li class="menu-lv-2">
-                  <i class="fa-solid fa-angle-right"></i>
-                  <span>Scholl</span>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="flex-shrink-0 relative group">
-            MEN
-            <div>
-              <div
-                class="men-nav-dropdown absolute bg-white min-w-[1200px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 p-4 z-10 w-full h-auto text-left rounded-md mt-12 invisible opacity-100 transform -translate-x-1/4 transition-all duration-300 ease-in-out group-hover:visible group-hover:opacity-100 group-hover:mt-6"
+      <!-- Drawer Menu for small devices -->
+      <div
+        id="drawer-menu"
+        class="fixed inset-0 z-50 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out lg:hidden"
+      >
+        <div class="p-8">
+          <button
+            id="close-drawer"
+            class="mb-4 focus:outline-none absolute right-8 bg-red-400 p-1 rounded-md hover:bg-red-600 text-white"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+          <ul class="mt-10">
+            <li
+              class="border-b border-[#ebebeb] py-3 hover:bg-slate-100 pl-5 rounded-md"
+            >
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >SNEAKER STUDIO</a
               >
-                <ul class="brands-dropdown">
-                  <h6>ALL SHOES</h6>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <span>Power</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <span>North star</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <span>Bata Red Label</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <span>Adidas</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <span>Bata</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <span>Bata 3D</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <span>Comfit</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <span>Hush puppies</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <span>Weinbrenner</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <span>Scholl</span>
-                  </li>
-                </ul>
-                <ul class="brands-dropdown">
-                  <h6>BRANDS</h6>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Power</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>North star</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Bata Red Label</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Adidas</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Bata</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Bata 3D</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Comfit</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Hush puppies</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Weinbrenner</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Scholl</span>
-                  </li>
-                </ul>
-                <ul class="brands-dropdown">
-                  <h6>By COLOR</h6>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Power</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>North star</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Bata Red Label</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Adidas</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Bata</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Bata 3D</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Comfit</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Hush puppies</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Weinbrenner</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Scholl</span>
-                  </li>
-                </ul>
-                <ul class="brands-dropdown">
-                  <h6>BY PRICE</h6>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Power</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>North star</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Bata Red Label</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Adidas</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Bata</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Bata 3D</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Comfit</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Hush puppies</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Weinbrenner</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Scholl</span>
-                  </li>
-                </ul>
-                <ul class="brands-dropdown">
-                  <h6>BY SIZE</h6>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Power</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>North star</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Bata Red Label</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Adidas</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Bata</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Bata 3D</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Comfit</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Hush puppies</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Weinbrenner</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Scholl</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li class="flex-shrink-0 relative group">
-            WOMEN
-            <div>
-              <div
-                class="absolute bg-white md:min-w-[1200px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 p-4 z-10 w-full h-auto text-left rounded-md mt-12 invisible opacity-100 transform -translate-x-1/4 transition-all duration-300 ease-in-out group-hover:visible group-hover:opacity-100 group-hover:mt-6 md:-left-[132px] left-0"
+            </li>
+            <li
+              class="border-b border-[#ebebeb] py-3 hover:bg-slate-100 pl-5 rounded-md"
+            >
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >BRANDS</a
               >
-                <ul class="brands-dropdown">
-                  <h6>ALL SHOES</h6>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <span>Power</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <span>North star</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <span>Bata Red Label</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <span>Adidas</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <span>Bata</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <span>Bata 3D</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <span>Comfit</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <span>Hush puppies</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <span>Weinbrenner</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <span>Scholl</span>
-                  </li>
-                </ul>
-                <ul class="brands-dropdown">
-                  <h6>BRANDS</h6>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Power</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>North star</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Bata Red Label</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Adidas</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Bata</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Bata 3D</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Comfit</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Hush puppies</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Weinbrenner</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Scholl</span>
-                  </li>
-                </ul>
-                <ul class="brands-dropdown">
-                  <h6>By COLOR</h6>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Power</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>North star</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Bata Red Label</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Adidas</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Bata</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Bata 3D</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Comfit</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Hush puppies</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Weinbrenner</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Scholl</span>
-                  </li>
-                </ul>
-                <ul class="brands-dropdown">
-                  <h6>BY PRICE</h6>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Power</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>North star</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Bata Red Label</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Adidas</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Bata</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Bata 3D</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Comfit</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Hush puppies</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Weinbrenner</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Scholl</span>
-                  </li>
-                </ul>
-                <ul class="brands-dropdown">
-                  <h6>BY SIZE</h6>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Power</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>North star</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Bata Red Label</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Adidas</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Bata</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Bata 3D</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Comfit</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Hush puppies</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Weinbrenner</span>
-                  </li>
-                  <li class="menu-lv-2 py-2 px-5">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span>Scholl</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li class="flex-shrink-0 hidden sm:block extra-item" id="fifth-item">
-            CHILDREN
-          </li>
-          <li class="flex-shrink-0 hidden sm:block extra-item">ACCESSORIES</li>
-          <li class="flex-shrink-0 hidden sm:block extra-item">
-            BATA CLUB
-            <div class="brands-nav-dropdown">
-              <ul class="brands-dropdown">
-                <li class="menu-lv-2">
-                  <i class="fa-solid fa-angle-right"></i>
-                  <span> Check your Bata Club points</span>
-                </li>
-                <li class="menu-lv-2">
-                  <i class="fa-solid fa-angle-right"></i>
-                  <span> Register Yourself</span>
-                </li>
-                <li class="menu-lv-2">
-                  <i class="fa-solid fa-angle-right"></i>
-                  <span> Bata Club Benefits</span>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="flex-shrink-0 hidden sm:block extra-item">B-MAG</li>
-          <li class="flex-shrink-0 hidden sm:block extra-item">FRANCHISE</li>
-        </ul>
+            </li>
+            <li
+              id="menu-item-men"
+              class="border-b border-[#ebebeb] py-3 hover:bg-slate-100 px-5 rounded-md flex justify-between"
+            >
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >MEN</a
+              >
+              <i class="fa-solid fa-angle-right"></i>
+            </li>
+            <li
+              class="border-b border-[#ebebeb] py-3 hover:bg-slate-100 pl-5 rounded-md"
+            >
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >WOMEN</a
+              >
+            </li>
+            <li
+              class="border-b border-[#ebebeb] py-3 hover:bg-slate-100 pl-5 rounded-md"
+            >
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >CHILDREN</a
+              >
+            </li>
+            <li
+              class="border-b border-[#ebebeb] py-3 hover:bg-slate-100 pl-5 rounded-md"
+            >
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >ACCESSORIES</a
+              >
+            </li>
+            <li
+              class="border-b border-[#ebebeb] py-3 hover:bg-slate-100 pl-5 rounded-md"
+            >
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >BATA CLUB</a
+              >
+            </li>
+            <li
+              class="border-b border-[#ebebeb] py-3 hover:bg-slate-100 pl-5 rounded-md"
+            >
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >B-MAG</a
+              >
+            </li>
+            <li
+              class="border-b border-[#ebebeb] py-3 hover:bg-slate-100 pl-5 rounded-md"
+            >
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >FRANCHISE</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Submenu for MEN -->
+      <div
+        id="submenu-men"
+        class="fixed inset-0 z-50 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out lg:hidden"
+      >
+        <div class="p-8">
+          <button
+            id="back-to-main-menu"
+            class="mb-4 focus:outline-none absolute left-8 bg-gray-200 p-1 rounded-md hover:bg-gray-400 text-black"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              ></path>
+            </svg>
+          </button>
+          <h3 class="text-lg font-bold mb-4 text-center">Men's Fashion</h3>
+          <ul class="mt-10">
+            <li
+              class="border-b border-[#ebebeb] py-3 hover:bg-slate-100 pl-5 rounded-md"
+            >
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >Product List</a
+              >
+            </li>
+            <li
+              class="border-b border-[#ebebeb] py-3 hover:bg-slate-100 pl-5 rounded-md"
+            >
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >Product List</a
+              >
+            </li>
+            <!-- Add more submenu items as needed -->
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -875,7 +537,6 @@
 
     <!-- banner section start -->
     <!-- Swiper -->
-
     <div class="swiper mySwiper mb-14 cursor-pointer">
       <div class="swiper-wrapper">
         <div class="swiper-slide pointer">
@@ -919,11 +580,9 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
     </div>
-
     <!-- banner section end -->
 
     <!-- main section  start-->
-
     <main class="max-w-screen-xl mx-auto mb-8">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 cursor-pointer">
         <div>
@@ -1485,8 +1144,8 @@
 
       <div class="mb-10">
         <h1 class="text-2xl font-bold">OUR HAND PICKED COLLECTION FOR YOU</h1>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 my-5">
-          <div class="relative">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 my-5">
+          <div class="relative mb-40 lg:mb-0">
             <div class="animate-scale">
               <img
                 src="https://www.batabd.com/cdn/shop/files/NS-banner-with-model-_-product_800x800_crop_center.jpg?v=1666761156"
@@ -1494,24 +1153,59 @@
                 class="lazyloaded"
               />
             </div>
+
             <div
-              class="absolute z-10 inset-0 flex flex-col justify-center items-center shadow-box"
-              style="top: 470px"
+              class="absolute z-10 flex flex-col justify-center items-center shadow-box -bottom-40"
             >
-              <div class="content-title bg-white px-6 py-3">
+              <div class="bg-white px-6 py-3">
                 <h3 class="text-2xl">NORTH STAR Curated</h3>
               </div>
-              <div class="bg-white text-center px-12 py-2">
+              <div
+                class="bg-white text-center px-12 py-2 flex flex-col items-center"
+              >
                 <span>
-                  Here goes the trendiest lifestyle selection to <br />
-                  redefine all your moves! Ensuring a look unlike <br />
-                  any other, brimming with coolness.
+                  Here goes the trendiest lifestyle selection to redefine all
+                  your moves! Ensuring a look unlike any other, brimming with
+                  coolness.
                 </span>
-                <!-- Increase margin top to mt-10 -->
-                <span
-                  class="btn-black inline-block mt-4 px-4 py-2 bg-black text-white cursor-pointer"
-                  >Shop Now</span
+
+                <button
+                  class="btn-black mt-4 px-4 py-2 bg-black text-white cursor-pointer"
                 >
+                  Shop Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="relative mb-40 lg:mb-0">
+            <div class="animate-scale">
+              <img
+                src="https://www.batabd.com/cdn/shop/files/NS-banner-with-model-_-product_800x800_crop_center.jpg?v=1666761156"
+                alt="Image"
+                class="lazyloaded"
+              />
+            </div>
+
+            <div
+              class="absolute z-10 flex flex-col justify-center items-center shadow-box -bottom-40"
+            >
+              <div class="bg-white px-6 py-3">
+                <h3 class="text-2xl">NORTH STAR Curated</h3>
+              </div>
+              <div
+                class="bg-white text-center px-12 py-2 flex flex-col items-center"
+              >
+                <span>
+                  Here goes the trendiest lifestyle selection to redefine all
+                  your moves! Ensuring a look unlike any other, brimming with
+                  coolness.
+                </span>
+
+                <button
+                  class="btn-black mt-4 px-4 py-2 bg-black text-white cursor-pointer"
+                >
+                  Shop Now
+                </button>
               </div>
             </div>
           </div>
@@ -1523,64 +1217,39 @@
                 class="lazyloaded"
               />
             </div>
+
             <div
-              class="absolute z-10 inset-0 flex flex-col justify-center items-center shadow-box"
-              style="top: 470px"
+              class="absolute z-10 flex flex-col justify-center items-center shadow-box -bottom-40"
             >
-              <div class="content-title bg-white px-6 py-3">
+              <div class="bg-white px-6 py-3">
                 <h3 class="text-2xl">NORTH STAR Curated</h3>
               </div>
-              <div class="bg-white text-center px-12 py-2">
+              <div
+                class="bg-white text-center px-12 py-2 flex flex-col items-center"
+              >
                 <span>
-                  Here goes the trendiest lifestyle selection to <br />
-                  redefine all your moves! Ensuring a look unlike <br />
-                  any other, brimming with coolness.
+                  Here goes the trendiest lifestyle selection to redefine all
+                  your moves! Ensuring a look unlike any other, brimming with
+                  coolness.
                 </span>
-                <!-- Increase margin top to mt-10 -->
-                <span
-                  class="btn-black inline-block mt-4 px-4 py-2 bg-black text-white cursor-pointer"
-                  >Shop Now</span
+
+                <button
+                  class="btn-black mt-4 px-4 py-2 bg-black text-white cursor-pointer"
                 >
-              </div>
-            </div>
-          </div>
-          <div class="relative">
-            <div class="animate-scale">
-              <img
-                src="https://www.batabd.com/cdn/shop/files/NS-banner-with-model-_-product_800x800_crop_center.jpg?v=1666761156"
-                alt="Image"
-                class="lazyloaded"
-              />
-            </div>
-            <div
-              class="absolute z-10 inset-0 flex flex-col justify-center items-center shadow-box"
-              style="top: 470px"
-            >
-              <div class="content-title bg-white px-6 py-3">
-                <h3 class="text-2xl">NORTH STAR Curated</h3>
-              </div>
-              <div class="bg-white text-center px-12 py-2">
-                <span>
-                  Here goes the trendiest lifestyle selection to <br />
-                  redefine all your moves! Ensuring a look unlike <br />
-                  any other, brimming with coolness.
-                </span>
-                <!-- Increase margin top to mt-10 -->
-                <span
-                  class="btn-black inline-block mt-4 px-4 py-2 bg-black text-white cursor-pointer"
-                  >Shop Now</span
-                >
+                  Shop Now
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <!-- features products show-->
 
       <div class="mt-56">
-        <h1 class="text-2xl font-bold">Featured Products</h1>
+        <h1 class="text-2xl font-bold pb-6">Featured Products</h1>
         <div>
-          <div id="slider-casuals" class="slider pt-8 pb-5">
+          <div class="sliderBestSellers pt-8 pb-5">
             <div class="slider-item relative h-full">
               <div class="relative slick-list">
                 <div class="w-full h-auto relative slider-img">
@@ -1860,7 +1529,7 @@
       <div class="my-5">
         <h1 class="text-2xl font-bold">Best Sellers</h1>
         <div>
-          <div id="slider-casuals" class="slider pt-8 pb-5">
+          <div class="sliderBestSellers pt-8 pb-5">
             <div class="slider-item relative h-full">
               <div class="relative slick-list">
                 <div class="w-full h-auto relative slider-img">
@@ -2123,7 +1792,7 @@
 
       <div class="mb-10">
         <h1 class="text-2xl font-bold">OUR HAND PICKED COLLECTION FOR YOU</h1>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 my-5">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 my-5">
           <div class="relative">
             <div class="animate-scale">
               <img
@@ -2133,14 +1802,15 @@
               />
             </div>
             <div
-              class="absolute z-10 inset-0 flex flex-col justify-center items-center shadow-box1"
-              style="top: 500px"
+              class="absolute z-10 flex flex-col justify-center items-center shadow-box -bottom-40"
             >
               <div class="content-title bg-white px-28">
                 <h6 class="text-sm text-center">Ladies</h6>
                 <h3 class="text-xl">Heels</h3>
               </div>
-              <div class="bg-white text-center px-20 py-2">
+              <div
+                class="bg-white text-center px-5 py-2 flex flex-col items-center"
+              >
                 <span class="text-sm">
                   Bata has the most stylish collection of ladies high heels,
                   heeled sandals &amp; stilettos. They get you, they’re happy to
@@ -2149,14 +1819,15 @@
                   graceful foot forward.
                 </span>
                 <!-- Increase margin top to mt-10 -->
-                <span
-                  class="btn-black inline-block mt-4 px-4 py-2 bg-black text-white cursor-pointer"
-                  >Shop Now</span
+                <button
+                  class="btn-black mt-4 px-4 py-2 bg-black text-white cursor-pointer"
                 >
+                  Shop Now
+                </button>
               </div>
             </div>
           </div>
-          <div class="relative">
+          <div class="relative mt-40 lg:mt-0">
             <div class="animate-scale">
               <img
                 src="https://www.batabd.com/cdn/shop/files/men_s-formal-new_800x800_crop_center.jpg?v=1665545247"
@@ -2165,14 +1836,15 @@
               />
             </div>
             <div
-              class="absolute z-10 inset-0 flex flex-col justify-center items-center shadow-box1"
-              style="top: 500px"
+              class="absolute z-10 flex flex-col justify-center items-center shadow-box -bottom-40"
             >
               <div class="content-title bg-white px-28">
                 <h6 class="text-sm text-center">MENS</h6>
                 <h3 class="text-xl">FORMALS</h3>
               </div>
-              <div class="bg-white text-center px-20 py-2">
+              <div
+                class="bg-white text-center px-5 py-2 flex flex-col items-center"
+              >
                 <span class="text-sm">
                   Bata has the most stylish collection of ladies high heels,
                   heeled sandals &amp; stilettos. They get you, they’re happy to
@@ -2181,14 +1853,15 @@
                   graceful foot forward.
                 </span>
                 <!-- Increase margin top to mt-10 -->
-                <span
-                  class="btn-black inline-block mt-4 px-4 py-2 bg-black text-white cursor-pointer"
-                  >Shop Now</span
+                <button
+                  class="btn-black mt-4 px-4 py-2 bg-black text-white cursor-pointer"
                 >
+                  Shop Now
+                </button>
               </div>
             </div>
           </div>
-          <div class="relative">
+          <div class="relative mt-40 lg:mt-0">
             <div class="animate-scale">
               <img
                 src="https://www.batabd.com/cdn/shop/files/ladies-bag-new_800x800_crop_center.jpg?v=1665545273"
@@ -2197,14 +1870,15 @@
               />
             </div>
             <div
-              class="absolute z-10 inset-0 flex flex-col justify-center items-center shadow-box1"
-              style="top: 500px"
+              class="absolute z-10 flex flex-col justify-center items-center shadow-box -bottom-40"
             >
               <div class="content-title bg-white px-28">
                 <h6 class="text-sm text-center">Ladies</h6>
                 <h3 class="text-xl">BAGS</h3>
               </div>
-              <div class="bg-white text-center px-20 py-2">
+              <div
+                class="bg-white text-center px-5 py-2 flex flex-col items-center"
+              >
                 <span class="text-sm">
                   Bata has the most stylish collection of ladies high heels,
                   heeled sandals &amp; stilettos. They get you, they’re happy to
@@ -2213,10 +1887,11 @@
                   graceful foot forward.
                 </span>
                 <!-- Increase margin top to mt-10 -->
-                <span
-                  class="btn-black inline-block mt-4 px-4 py-2 bg-black text-white cursor-pointer"
-                  >Shop Now</span
+                <button
+                  class="btn-black mt-4 px-4 py-2 bg-black text-white cursor-pointer"
                 >
+                  Shop Now
+                </button>
               </div>
             </div>
           </div>
@@ -2224,9 +1899,9 @@
       </div>
 
       <!-- Recent Post -->
-      <div class="mt-80">
+      <div class="mt-52 lg:mt-80">
         <h1 class="text-2xl font-bold">Recent Post</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-5">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 my-5">
           <div class="relative">
             <div class="animate-scale">
               <img
@@ -2236,8 +1911,7 @@
               />
             </div>
             <div
-              class="absolute z-10 inset-0 flex flex-col justify-center items-center shadow-box1"
-              style="top: 410px"
+              class="absolute z-10 flex flex-col justify-center items-center shadow-box -bottom-40"
             >
               <div class="content-title bg-white px-6 py-2">
                 <p class="text-sm opacity-70 text-center py-3">
@@ -2245,22 +1919,24 @@
                 </p>
                 <h3 class="text-2xl">Eid Moments Styled By Bata</h3>
               </div>
-              <div class="bg-white text-center px-8 py-2">
+              <div
+                class="bg-white text-center px-8 py-2 flex flex-col items-center"
+              >
                 <span>
                   The crescent moon signals the joyous end of Ramadan and the
                   much-anticipated arrival of Eid ul-Fitr! It's a time for
                   feasting, family reunions, meeting up with friends, and most
                   of all, dressing the absolute...
                 </span>
-                <!-- Increase margin top to mt-10 -->
-                <span
-                  class="btn-black inline-block mt-4 px-4 py-2 bg-black text-white cursor-pointer"
-                  >Shop Now</span
+                <button
+                  class="w-40 inline-block mt-1 px-4 py-2 bg-black text-white cursor-pointer"
                 >
+                  Shop Now
+                </button>
               </div>
             </div>
           </div>
-          <div class="relative">
+          <div class="relative mt-60 lg:mt-0">
             <div class="animate-scale">
               <img
                 src="//www.batabd.com/cdn/shop/articles/Founders-Day_Celebrating-Unity-with-a-Global-Workforce_x370.jpg?v=1692849351"
@@ -2269,8 +1945,7 @@
               />
             </div>
             <div
-              class="absolute z-10 inset-0 flex flex-col justify-center items-center shadow-box1"
-              style="top: 410px"
+              class="absolute z-10 flex flex-col justify-center items-center shadow-box -bottom-40"
             >
               <div class="content-title bg-white px-6 py-2">
                 <p class="text-sm opacity-70 text-center py-3">
@@ -2278,18 +1953,20 @@
                 </p>
                 <h3 class="text-2xl">Eid Moments Styled By Bata</h3>
               </div>
-              <div class="bg-white text-center px-8 py-2">
+              <div
+                class="bg-white text-center px-8 py-2 flex flex-col items-center"
+              >
                 <span>
                   The crescent moon signals the joyous end of Ramadan and the
                   much-anticipated arrival of Eid ul-Fitr! It's a time for
                   feasting, family reunions, meeting up with friends, and most
                   of all, dressing the absolute...
                 </span>
-                <!-- Increase margin top to mt-10 -->
-                <span
-                  class="btn-black inline-block mt-4 px-4 py-2 bg-black text-white cursor-pointer"
-                  >Shop Now</span
+                <button
+                  class="w-40 inline-block mt-1 px-4 py-2 bg-black text-white cursor-pointer"
                 >
+                  Shop Now
+                </button>
               </div>
             </div>
           </div>
@@ -2301,7 +1978,7 @@
         <h1 class="text-2xl font-bold">Bata On Instagram</h1>
         <p class="text-red-500 mt-3">#BATABANGLADESH</p>
         <div>
-          <div id="slider-casuals" class="slider pt-8 pb-5">
+          <div class="sliderBataOnInstagram pt-8 pb-5">
             <!-- Add other slider items here -->
             <div class="slider-item relative h-full">
               <div class="relative slick-list">
@@ -2507,6 +2184,6 @@
       </nav>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../Components/script.js"></script>
   </body>
 </html>

@@ -1,33 +1,3 @@
-// document
-// .getElementById("manage-account-btn")
-// .addEventListener("click", function () {
-//   const menu = document.getElementById("manage-account-menu");
-//   menu.classList.toggle("hidden");
-// });
-
-// function showContent(section, element) {
-
-// const sections = document.querySelectorAll(".content-section");
-// sections.forEach(function (section) {
-//   section.classList.add("hidden");
-// });
-
-// const menuItems = document.querySelectorAll(
-//   "#menu-list li, #manage-account-menu li"
-// );
-// menuItems.forEach(function (item) {
-//   item.classList.remove("active");
-// });
-
-// const selectedSection = document.getElementById(section);
-// if (selectedSection) {
-//   selectedSection.classList.remove("hidden");
-// }
-
-// element.classList.add("active");
-// }
-
-// document.getElementById("default-content").classList.remove("hidden");
 
 function showContent(id, element) {
   const contents = document.querySelectorAll(".content-section");

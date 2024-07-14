@@ -16,327 +16,326 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="./output.css" rel="stylesheet" />
 
-      <!-- daisyui link -->
-      <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+  <!-- daisyui link -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
 
   <!-- css link -->
   <link rel="stylesheet" href="product-details.css" />
-  <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="style.css" />
 
   <!-- font awesome link -->
   <script
-      src="https://kit.fontawesome.com/f07af11b35.js"
-      crossorigin="anonymous"
-    ></script>
+    src="https://kit.fontawesome.com/f07af11b35.js"
+    crossorigin="anonymous"
+  ></script>
 
   <body>
     <header
-    class="container mx-auto flex-no-wrap relative flex w-full items-center justify-between bg-zinc-50 py-2 shadow-dark-mild dark:bg-neutral-700 md:flex-wrap md:justify-start md:py-4"
-  >
-    <div class="flex w-full flex-wrap items-center justify-between px-3">
-      <!-- Hamburger button for mobile view -->
-      <button
-        class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 md:hidden"
-        type="button"
-        aria-controls="navbarSupportedContent1"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-        onclick="toggleDrawer()"
-      >
-        <!-- Hamburger icon -->
-        <span class="">
-          <i class="fa-solid fa-bars text-2xl"></i>
-        </span>
-      </button>
-
-      <!-- Collapsible navigation container -->
-      <div class="flex" id="navbarSupportedContent1">
-        <!-- left side location -->
-        <div
-          class="!visible hidden md:!flex md:basis-auto left-side items-center justify-center"
+      class="container mx-auto flex-no-wrap relative flex w-full items-center justify-between bg-zinc-50 py-2 shadow-dark-mild dark:bg-neutral-700 md:flex-wrap md:justify-start md:py-4"
+    >
+      <div class="flex w-full flex-wrap items-center justify-between px-3">
+        <!-- Hamburger button for mobile view -->
+        <button
+          class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 md:hidden"
+          type="button"
+          aria-controls="navbarSupportedContent1"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onclick="toggleDrawer()"
         >
-          <i class="fa-solid fa-location-dot"></i>
-          <span class="locaton-text md:text-xs lg:text-lg">
-            Find A Store | Customer care: 09666200300
+          <!-- Hamburger icon -->
+          <span class="">
+            <i class="fa-solid fa-bars text-2xl"></i>
           </span>
-        </div>
-        <div class="md:hidden">
-          <a href="#"
-            ><i class="fa-solid fa-magnifying-glass text-2xl"></i
-          ></a>
-        </div>
-      </div>
+        </button>
 
-      <!-- Drawer for mobile view -->
-      <div
-        id="drawer"
-        class="fixed rounded-r-2xl top-16 left-0 z-50 w-11/12 h-auto bg-slate-800 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden"
-      >
-        <!-- Drawer content -->
-        <div class="flex justify-end p-4">
-          <button
-            class="border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200"
-            type="button"
-            aria-label="Close navigation"
-            onclick="toggleDrawer()"
+        <!-- Collapsible navigation container -->
+        <div class="flex" id="navbarSupportedContent1">
+          <!-- left side location -->
+          <div
+            class="!visible hidden md:!flex md:basis-auto left-side items-center justify-center"
           >
-            <!-- Close icon -->
-            <span>
-              <i class="fa-solid fa-rectangle-xmark text-2xl text-white"></i>
+            <i class="fa-solid fa-location-dot"></i>
+            <span class="locaton-text md:text-xs lg:text-lg">
+              Find A Store | Customer care: 09666200300
             </span>
-          </button>
-        </div>
-
-        <div class="flex items-center gap-10 text-white opacity-100">
-          <div class="avatar">
-            <div
-              class="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 ml-2"
-            >
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-              />
-            </div>
           </div>
-          <div class="">
-            <h1 class="text-lg">MD Gousul Islam</h1>
-            <p class="text-base">gausulislam5@gmail.com</p>
-            <span class="text-xs">01785003901</span>
+          <div class="md:hidden">
+            <a href="#"
+              ><i class="fa-solid fa-magnifying-glass text-2xl"></i
+            ></a>
           </div>
         </div>
-        <hr class="bg-white mt-5" />
-        <ul
-          class="list-style-none p-4 text-white space-y-1 overflow-y-auto max-h-[calc(100vh-200px)]"
-        >
-          <li class="bg-[#3D455C] p-2 rounded-md">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-5">
-                <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
-                <h3>Change Theme</h3>
-              </div>
-              <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
-            </div>
-          </li>
-          <li class="bg-[#3D455C] p-2 rounded-md">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-5">
-                <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
-                <h3>Change Theme</h3>
-              </div>
-              <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
-            </div>
-          </li>
-          <li class="bg-[#3D455C] p-2 rounded-md">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-5">
-                <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
-                <h3>Change Theme</h3>
-              </div>
-              <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
-            </div>
-          </li>
-          <li class="bg-[#3D455C] p-2 rounded-md">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-5">
-                <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
-                <h3>Change Theme</h3>
-              </div>
-              <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
-            </div>
-          </li>
-          <li class="bg-[#3D455C] p-2 rounded-md">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-5">
-                <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
-                <h3>Change Theme</h3>
-              </div>
-              <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
-            </div>
-          </li>
-          <li class="bg-[#3D455C] p-2 rounded-md">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-5">
-                <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
-                <h3>Change Theme</h3>
-              </div>
-              <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
-            </div>
-          </li>
-          <li class="bg-[#3D455C] p-2 rounded-md">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-5">
-                <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
-                <h3>Change Theme</h3>
-              </div>
-              <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
-            </div>
-          </li>
-          <li class="bg-[#3D455C] p-2 rounded-md">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-5">
-                <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
-                <h3>Change Theme</h3>
-              </div>
-              <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
-            </div>
-          </li>
-          <li class="bg-[#3D455C] p-2 rounded-md">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-5">
-                <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
-                <h3>Change Theme</h3>
-              </div>
-              <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
-            </div>
-          </li>
-          <li class="bg-[#3D455C] p-2 rounded-md">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-5">
-                <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
-                <h3>Change Theme</h3>
-              </div>
-              <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
-            </div>
-          </li>
-        </ul>
-      </div>
 
-      <!-- middle  logo img section -->
-
-      <div>
-        <a class="logo-img" href="" title="Logo">
-          <img
-            itemprop="logo"
-            data-src="//www.batabd.com/cdn/shop/files/logo-2_d42c63ce-1f56-4af2-a68f-a4cc3a91bd07.png?v=1614332440"
-            src="//www.batabd.com/cdn/shop/files/logo-2_d42c63ce-1f56-4af2-a68f-a4cc3a91bd07.png?v=1614332440"
-            alt="batabd"
-            class="lazyautosizes lazyloaded w-20 md:w-24 lg:w-full"
-            data-sizes="auto"
-          />
-        </a>
-      </div>
-
-      <!-- Right elements -->
-      <div class="relative flex items-center">
-        <a
-          class="me-4 text-neutral-600 dark:text-white"
-          href="#"
-          id="user-icon"
-        >
-          <div class="customer-links">
-            <div class="user-icons flex items-center justify-center">
-              <!-- Icon -->
-              <i class="fa-regular fa-user text-2xl"></i>
-              <i class="fa-solid fa-angle-down angle text-xl"></i>
-            </div>
-          </div>
-        </a>
-
-        <!-- user profile dropdown menu -->
+        <!-- Drawer for mobile view -->
         <div
-          class="absolute right-[75%] top-8 z-10 p-3 w-44 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dropdown-menu"
-          role="menu"
-          aria-orientation="vertical"
-          aria-labelledby="menu-button"
-          tabindex="-1"
-          id="dropdown-menu"
+          id="drawer"
+          class="fixed rounded-r-2xl top-16 left-0 z-50 w-11/12 h-auto bg-slate-800 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden"
         >
-          <div class="py-1" role="none">
-            <a
-              href="#"
-              class="block px-5 py-1 text-sm text-gray-700 hover:bg-gray-300 hover:text-gray-700 rounded-md"
-              onclick="gotoLogin()"
-              role="menuitem"
-              tabindex="-1"
-              id="menu-item-0"
-            >
-              <i class="fa-regular fa-user text-lg pr-4"></i>
-              Manage your Account</a
-            >
-            <a
-              href="#"
-              class="block px-5 py-1 text-sm text-gray-700 hover:bg-gray-300 hover:text-gray-700 rounded-md"
-              onclick="gotoLogin()"
-              role="menuitem"
-              tabindex="-1"
-              id="menu-item-0"
-            >
-              <i class="fa-regular fa-user text-lg pr-4"></i>
-              Login</a
-            >
-            <a
-              href="#"
-              onclick="gotoSignup()"
-              class="block px-5 py-1 text-sm text-gray-700 hover:bg-gray-300 hover:text-gray-700 rounded-md"
-              role="menuitem"
-              tabindex="-1"
-              id="menu-item-1"
-              ><i class="fa-regular fa-address-card text-lg pr-2"></i> Sign
-              Up</a
-            >
+          <!-- Drawer content -->
+          <div class="flex justify-end p-4">
             <button
-              type="submit"
-              class="block px-5 py-1 text-sm text-gray-700 hover:bg-gray-300 hover:text-gray-700 rounded-md"
-              role="menuitem"
-              tabindex="-1"
-              id="menu-item-3"
+              class="border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200"
+              type="button"
+              aria-label="Close navigation"
+              onclick="toggleDrawer()"
             >
-              <i class="fa-solid fa-ban text-lg pr-4"></i>Sign out
+              <!-- Close icon -->
+              <span>
+                <i class="fa-solid fa-rectangle-xmark text-2xl text-white"></i>
+              </span>
             </button>
           </div>
+
+          <div class="flex items-center gap-10 text-white opacity-100">
+            <div class="avatar">
+              <div
+                class="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 ml-2"
+              >
+                <img
+                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                />
+              </div>
+            </div>
+            <div class="">
+              <h1 class="text-lg">MD Gousul Islam</h1>
+              <p class="text-base">gausulislam5@gmail.com</p>
+              <span class="text-xs">01785003901</span>
+            </div>
+          </div>
+          <hr class="bg-white mt-5" />
+          <ul
+            class="list-style-none p-4 text-white space-y-1 overflow-y-auto max-h-[calc(100vh-200px)]"
+          >
+            <li class="bg-[#3D455C] p-2 rounded-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-5">
+                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
+                  <h3>Change Theme</h3>
+                </div>
+                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
+              </div>
+            </li>
+            <li class="bg-[#3D455C] p-2 rounded-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-5">
+                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
+                  <h3>Change Theme</h3>
+                </div>
+                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
+              </div>
+            </li>
+            <li class="bg-[#3D455C] p-2 rounded-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-5">
+                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
+                  <h3>Change Theme</h3>
+                </div>
+                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
+              </div>
+            </li>
+            <li class="bg-[#3D455C] p-2 rounded-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-5">
+                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
+                  <h3>Change Theme</h3>
+                </div>
+                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
+              </div>
+            </li>
+            <li class="bg-[#3D455C] p-2 rounded-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-5">
+                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
+                  <h3>Change Theme</h3>
+                </div>
+                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
+              </div>
+            </li>
+            <li class="bg-[#3D455C] p-2 rounded-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-5">
+                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
+                  <h3>Change Theme</h3>
+                </div>
+                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
+              </div>
+            </li>
+            <li class="bg-[#3D455C] p-2 rounded-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-5">
+                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
+                  <h3>Change Theme</h3>
+                </div>
+                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
+              </div>
+            </li>
+            <li class="bg-[#3D455C] p-2 rounded-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-5">
+                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
+                  <h3>Change Theme</h3>
+                </div>
+                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
+              </div>
+            </li>
+            <li class="bg-[#3D455C] p-2 rounded-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-5">
+                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
+                  <h3>Change Theme</h3>
+                </div>
+                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
+              </div>
+            </li>
+            <li class="bg-[#3D455C] p-2 rounded-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-5">
+                  <span><i class="fa-solid fa-swatchbook text-2xl"></i></span>
+                  <h3>Change Theme</h3>
+                </div>
+                <i class="fa-solid fa-angle-right text-2xl pr-10"></i>
+              </div>
+            </li>
+          </ul>
         </div>
 
-        <!-- wishlist icon -->
+        <!-- middle  logo img section -->
 
-        <a
-          class="wishlist hidden sm:hiddden md:block"
-          href=""
-          title="My Wishlists"
-        >
-          <i class="fa-regular fa-heart text-2xl"></i>
-        </a>
+        <div>
+          <a class="logo-img" href="" title="Logo">
+            <img
+              itemprop="logo"
+              data-src="//www.batabd.com/cdn/shop/files/logo-2_d42c63ce-1f56-4af2-a68f-a4cc3a91bd07.png?v=1614332440"
+              src="//www.batabd.com/cdn/shop/files/logo-2_d42c63ce-1f56-4af2-a68f-a4cc3a91bd07.png?v=1614332440"
+              alt="batabd"
+              class="lazyautosizes lazyloaded w-20 md:w-24 lg:w-full"
+              data-sizes="auto"
+            />
+          </a>
+        </div>
 
-        <!-- WhatsApp icon -->
-        <a href="#" class="hidden sm:hidden md:block">
-          <img
-            src="https://cdn.shopify.com/s/files/1/2287/9679/files/whatsapp-icon.png?v=1631614102"
-            alt="whatsapp call"
-            class="w-6 mx-4"
-          />
-        </a>
+        <!-- Right elements -->
+        <div class="relative flex items-center">
+          <a
+            class="me-4 text-neutral-600 dark:text-white"
+            href="#"
+            id="user-icon"
+          >
+            <div class="customer-links">
+              <div class="user-icons flex items-center justify-center">
+                <!-- Icon -->
+                <i class="fa-regular fa-user text-2xl"></i>
+                <i class="fa-solid fa-angle-down angle text-xl"></i>
+              </div>
+            </div>
+          </a>
 
-        <!-- cart icons  -->
+          <!-- user profile dropdown menu -->
+          <div
+            class="absolute right-[75%] top-8 z-10 p-3 w-44 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dropdown-menu"
+            role="menu"
+            aria-orientation="vertical"
+            aria-labelledby="menu-button"
+            tabindex="-1"
+            id="dropdown-menu"
+          >
+            <div class="py-1" role="none">
+              <a
+                href="#"
+                class="block px-5 py-1 text-sm text-gray-700 hover:bg-gray-300 hover:text-gray-700 rounded-md"
+                onclick="gotoLogin()"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-0"
+              >
+                <i class="fa-regular fa-user text-lg pr-4"></i>
+                Manage your Account</a
+              >
+              <a
+                href="#"
+                class="block px-5 py-1 text-sm text-gray-700 hover:bg-gray-300 hover:text-gray-700 rounded-md"
+                onclick="gotoLogin()"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-0"
+              >
+                <i class="fa-regular fa-user text-lg pr-4"></i>
+                Login</a
+              >
+              <a
+                href="#"
+                onclick="gotoSignup()"
+                class="block px-5 py-1 text-sm text-gray-700 hover:bg-gray-300 hover:text-gray-700 rounded-md"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-1"
+                ><i class="fa-regular fa-address-card text-lg pr-2"></i> Sign
+                Up</a
+              >
+              <button
+                type="submit"
+                class="block px-5 py-1 text-sm text-gray-700 hover:bg-gray-300 hover:text-gray-700 rounded-md"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-3"
+              >
+                <i class="fa-solid fa-ban text-lg pr-4"></i>Sign out
+              </button>
+            </div>
+          </div>
 
-        <div
-          class="wrapper-top-cart relative inline-block transition-all duration-300 ease-in-out"
-          onclick="gotoCart()"
-        >
-          <i class="fa-solid fa-cart-shopping cursor-pointer text-2xl"></i>
-          <div class="badge badge-secondary">0</div>
-          <div class="dropdown-cart hidden sm:hidden md:hidden lg:block">
-            <div class="no-items sm:hidden md:hidden lg:block">
-              <p class="text-center mb-6">Your cart is currently empty.</p>
-              <div class="mb-3">
-                <a class="btn-black" href="#"> Continue Shopping </a>
+          <!-- wishlist icon -->
+
+          <a
+            class="wishlist hidden sm:hiddden md:block"
+            href=""
+            title="My Wishlists"
+          >
+            <i class="fa-regular fa-heart text-2xl"></i>
+          </a>
+
+          <!-- WhatsApp icon -->
+          <a href="#" class="hidden sm:hidden md:block">
+            <img
+              src="https://cdn.shopify.com/s/files/1/2287/9679/files/whatsapp-icon.png?v=1631614102"
+              alt="whatsapp call"
+              class="w-6 mx-4"
+            />
+          </a>
+
+          <!-- cart icons  -->
+
+          <div
+            class="wrapper-top-cart relative inline-block transition-all duration-300 ease-in-out"
+            onclick="gotoCart()"
+          >
+            <i class="fa-solid fa-cart-shopping cursor-pointer text-2xl"></i>
+            <div class="badge badge-secondary">0</div>
+            <div class="dropdown-cart hidden sm:hidden md:hidden lg:block">
+              <div class="no-items sm:hidden md:hidden lg:block">
+                <p class="text-center mb-6">Your cart is currently empty.</p>
+                <div class="mb-3">
+                  <a class="btn-black" href="#"> Continue Shopping </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- searchbar -->
+          <!-- searchbar -->
 
-        <div class="searchBar ml-3 hidden sm:hidden md:hidden lg:block">
-          <input type="text" placeholder="SEARCH" />
-          <i class="fa-solid fa-magnifying-glass search-icons"></i>
+          <div class="searchBar ml-3 hidden sm:hidden md:hidden lg:block">
+            <input type="text" placeholder="SEARCH" />
+            <i class="fa-solid fa-magnifying-glass search-icons"></i>
+          </div>
         </div>
+        <!-- Right elements -->
       </div>
-      <!-- Right elements -->
-    </div>
-  </header>
+    </header>
     <!-- product-details.html -->
     <section class="py-10 lg:py-20 relative container mx-auto">
       <div class="mx-auto max-w-full px-4 sm:px-6 lg:px-8">
@@ -460,29 +459,31 @@
               Yellow Summer Travel Bag
             </h2>
             <div class="sm:flex-row sm:items-center mb-6 space-y-5">
-                <div class="flex items-center gap-2">
-                    <div class="flex items-center gap-1">
-                        <i class="fa-solid fa-star text-yellow-400"></i>
-                        <i class="fa-solid fa-star text-yellow-400"></i>
-                        <i class="fa-solid fa-star text-yellow-400"></i>
-                        <i class="fa-solid fa-star text-yellow-400"></i>
-                        <i class="fa-solid fa-star text-yellow-400"></i>
-                    </div>
-
-                    <span class="pl-2 font-normal leading-7 text-gray-500 text-sm"
-                      >1624 review</span
-                    >
-                  </div>
-
-                <div class="flex">
-                    <del class="font-manrope font-semibold text-2xl leading-9 text-red-700 pr-5 sm:border-r border-gray-200 mr-5">$500</del>
-                    <h6
-                      class="font-manrope font-semibold text-2xl leading-9 text-gray-900 pr-5 sm:border-r border-gray-200 mr-5"
-                    >
-                      $220
-                    </h6>
+              <div class="flex items-center gap-2">
+                <div class="flex items-center gap-1">
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
                 </div>
-             
+
+                <span class="pl-2 font-normal leading-7 text-gray-500 text-sm"
+                  >1624 review</span
+                >
+              </div>
+
+              <div class="flex">
+                <del
+                  class="font-manrope font-semibold text-2xl leading-9 text-red-700 pr-5 sm:border-r border-gray-200 mr-5"
+                  >$500</del
+                >
+                <h6
+                  class="font-manrope font-semibold text-2xl leading-9 text-gray-900 pr-5 sm:border-r border-gray-200 mr-5"
+                >
+                  $220
+                </h6>
+              </div>
             </div>
             <p class="text-gray-500 text-base font-normal mb-8">
               the perfect companion for your next adventure! Embrace the spirit
@@ -571,6 +572,7 @@
                       class="border border-gray-200 text-gray-900 text-sm py-2 rounded-full px-1 sm:px-3 font-semibold whitespace-nowrap shadow-sm shadow-transparent transition-all duration-300 hover:shadow-gray-300 hover:bg-gray-50 hover:border-gray-300"
                     >
                       67 cm
+                    </button>
                     <button
                       class="border border-gray-200 text-gray-900 text-sm py-2 rounded-full px-1 sm:px-3 font-semibold whitespace-nowrap shadow-sm shadow-transparent transition-all duration-300 hover:shadow-gray-300 hover:bg-gray-50 hover:border-gray-300"
                     >
@@ -584,39 +586,38 @@
                   </div>
                 </div>
                 <div class="flex items-center gap-10 mb-3">
-                    <h1 class="font-medium text-lg leading-8 text-gray-900 mb-4">Quantity</h1>
-                    <div class=" flex items-center gap-5 mb-6">
-                      <div class="w-full flex">
-                        <button
-                          class="group py-2 px-3 border border-gray-400 rounded-l-full shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-300 hover:bg-gray-50"
-                        >
+                  <h1 class="font-medium text-lg leading-8 text-gray-900 mb-4">
+                    Quantity
+                  </h1>
+                  <div class="flex items-center gap-5 mb-6">
+                    <div class="w-full flex">
+                      <button
+                        class="group py-2 px-3 border border-gray-400 rounded-l-full shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-300 hover:bg-gray-50"
+                      >
                         <i class="fa-solid fa-minus"></i>
-                        </button>
-                        <input
-                          type="text"
-                          class="font-semibold text-gray-900 py-2 px-3 max-w-[80px] border-y border-gray-400 
-                          bg-transparent placeholder:text-gray-900 text-center
-                           hover:bg-gray-50 focus-within:bg-gray-50 outline-0"
-                          placeholder="1"
-                          readonly
-                        />
-                        <button
-                          class="group py-2 px-3 border border-gray-400 rounded-r-full shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-300 hover:bg-gray-50"
-                        >
+                      </button>
+                      <input
+                        type="text"
+                        class="font-semibold text-gray-900 py-2 px-3 max-w-[80px] border-y border-gray-400 bg-transparent placeholder:text-gray-900 text-center hover:bg-gray-50 focus-within:bg-gray-50 outline-0"
+                        placeholder="1"
+                        readonly
+                      />
+                      <button
+                        class="group py-2 px-3 border border-gray-400 rounded-r-full shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-300 hover:bg-gray-50"
+                      >
                         <i class="fa-solid fa-plus"></i>
-                        </button>
-                      </div>
-                    
-                    <i class="fa-regular fa-heart text-2xl"></i>
-             
+                      </button>
                     </div>
+
+                    <i class="fa-regular fa-heart text-2xl"></i>
+                  </div>
                 </div>
-               
+
                 <div class="flex items-center gap-3">
-                    <button
+                  <button
                     class="group py-3 px-4 rounded-full bg-indigo-50 text-indigo-600 font-semibold text-lg w-full flex items-center justify-center gap-2 shadow-sm shadow-transparent transition-all duration-500 hover:bg-indigo-300 hover:shadow-indigo-200"
                   >
-                  <i class="fa-solid fa-cart-shopping text-lg"></i>
+                    <i class="fa-solid fa-cart-shopping text-lg"></i>
                     Add to cart
                   </button>
                   <button
@@ -631,33 +632,41 @@
         </div>
       </div>
 
-      <div class="pt-5 flex flex-wrap" id="tabs-id">
+      <div class="pt-5 flex flex-wrap" id="tabs-id1">
         <div class="w-full">
-          <ul class="flex sm:px-2 mb-0 list-none flex-wrap pt-3 pb-4 flex-row cursor-pointer">
+          <ul
+            class="flex sm:px-2 mb-0 list-none flex-wrap pt-3 pb-4 flex-row cursor-pointer"
+          >
             <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
-              <a class="text-sm font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal text-white bg-pink-600" onclick="changeAtiveTab(event,'tab-profile')">
-                 Description
+              <a
+                class="text-sm font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal text-white bg-pink-600"
+                onclick="changeActiveTab(event,'tab-profile')"
+              >
+                Description
               </a>
             </li>
             <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
-              <a class="text-sm font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal text-pink-600 bg-white" onclick="changeAtiveTab(event,'tab-settings')">
-                  Review
+              <a
+                class="text-sm font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal text-pink-600 bg-white"
+                onclick="changeActiveTab(event,'tab-settings')"
+              >
+                Review
               </a>
             </li>
-  
           </ul>
-          <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
+          <div
+            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded"
+          >
             <div class="px-4 py-5 flex-auto">
-              <div class="tab-content tab-space">
+              <div class="tab-content1 tab-space">
                 <div class="block" id="tab-profile">
                   <p>
                     Collaboratively administrate empowered markets via
                     plug-and-play networks. Dynamically procrastinate B2C users
                     after installed base benefits.
-                    <br />
-                    <br />
-                    Dramatically visualize customer directed convergence
-                    without revolutionary ROI.
+                    <br /><br />
+                    Dramatically visualize customer directed convergence without
+                    revolutionary ROI.
                   </p>
                 </div>
                 <div class="hidden" id="tab-settings">
@@ -665,8 +674,7 @@
                     Completely synergize resource taxing relationships via
                     premier niche markets. Professionally cultivate one-to-one
                     customer service with robust ideas.
-                    <br />
-                    <br />
+                    <br /><br />
                     Dynamically innovate resource-leveling customer service for
                     state of the art customer service.
                   </p>
@@ -677,6 +685,9 @@
         </div>
       </div>
     </section>
+
+
+
     <footer class="footer p-10 bg-black text-white">
       <nav class="footer-nav">
         <h6 class="footer-title">ABOUT</h6>
@@ -775,7 +786,7 @@
         </div>
       </nav>
     </footer>
-    <script src="products-details.js"></script>
-    <script src="/Task-01//drutoshoes_template/src/Components/script.js"></script>
+    <script src="../Components/script.js"></script>
+    <script src="../Components/products-details.js"></script>
   </body>
 </html>
