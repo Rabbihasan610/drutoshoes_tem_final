@@ -1,4 +1,4 @@
-// header user dropdown menu
+// header user dropdown menu start
 document
   .getElementById("user-icon")
   .addEventListener("click", function (event) {
@@ -22,8 +22,8 @@ window.onclick = function (event) {
     }
   }
 };
-
-// header card dropdown menu js
+// header user dropdown menu end
+// header card dropdown menu js start
 
 document.addEventListener("DOMContentLoaded", function () {
   const cartIcon = document.querySelector(".wrapper-top-cart");
@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     dropdownCart.style.display = "none";
   });
 });
+// header card dropdown menu js end
 
 // header mobile search menu
 document.addEventListener("DOMContentLoaded", function () {
@@ -308,7 +309,10 @@ const drawerContent = document.querySelector(".drawer-content");
 
 // Close the drawer when clicking outside of it
 document.addEventListener("click", (event) => {
-  if (!drawerContent.contains(event.target) && !drawerToggleCheckbox.contains(event.target)) {
+  if (
+    !drawerContent.contains(event.target) &&
+    !drawerToggleCheckbox.contains(event.target)
+  ) {
     drawerToggleCheckbox.checked = false;
   }
 });
@@ -318,10 +322,24 @@ drawerContent.addEventListener("click", (event) => {
   event.stopPropagation();
 });
 
+// filter page grid and list items page js start
+const gridIcon = document.getElementById("icon-grid");
+const listIcon = document.getElementById("icon-list");
+const gridView = document.getElementById("grid-view");
+const listView = document.getElementById("list-view");
+
+gridIcon.addEventListener("click", () => {
+  gridView.classList.remove("hidden");
+  listView.classList.add("hidden");
+});
+
+listIcon.addEventListener("click", () => {
+  listView.classList.remove("hidden");
+  gridView.classList.add("hidden");
+});
+// filter page grid and list items page js end
+
 //filter drawer page end
-
-
-///
 
 //product details
 function goToDetails(productId) {

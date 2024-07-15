@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter Page</title>
+
+    <!-- css link -->
+    <link href="./style.css" rel="stylesheet" />
+
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet" />
+
+    <!-- daisyui link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- google font-link -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+
+    <!-- font awesome link -->
+    <script
+      src="https://kit.fontawesome.com/f07af11b35.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- swipper link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- slick slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  </head>
+
+  <body>
+    <!-- header section start -->
+    <header
+      class="container mx-auto flex-no-wrap relative flex w-full items-center justify-between bg-zinc-50 py-2 shadow-dark-mild dark:bg-neutral-700 md:flex-wrap md:justify-start md:py-4"
+    >
+      <div class="flex w-full flex-wrap items-center justify-between px-3">
+        <!-- Hamburger button for mobile view -->
+        <button
+          class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 md:hidden"
+          id="menu-toggle"
+        >
+          <!-- Hamburger icon -->
+          <span class="">
+            <i class="fa-solid fa-bars text-2xl"></i>
+          </span>
+        </button>
+
+        <!-- Collapsible navigation container -->
+        <div class="flex" id="navbarSupportedContent1">
+          <!-- left side location -->
+          <div
+            class="!visible hidden md:!flex md:basis-auto left-side items-center justify-center"
+          >
+            <i class="fa-solid fa-location-dot"></i>
+            <span class="locaton-text md:text-xs lg:text-lg">
+              Find A Store | Customer care: 09666200300
+            </span>
+          </div>
+          <div class="md:hidden">
+            <a href="#"
+              ><i class="fa-solid fa-magnifying-glass text-2xl"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Drawer for mobile view -->
+
+        <!-- middle  logo img section -->
+
+        <div>
+          <a class="logo-img" title="Logo">
+            <img
+              itemprop="logo"
+              data-src="//www.batabd.com/cdn/shop/files/logo-2_d42c63ce-1f56-4af2-a68f-a4cc3a91bd07.png?v=1614332440"
+              src="//www.batabd.com/cdn/shop/files/logo-2_d42c63ce-1f56-4af2-a68f-a4cc3a91bd07.png?v=1614332440"
+              alt="batabd"
+              class="lazyautosizes lazyloaded w-20 md:w-24 lg:w-full"
+              data-sizes="auto"
+            />
+          </a>
+        </div>
+
+        <!-- Right elements -->
+        <div class="relative flex items-center">
+          <a
+            class="me-4 text-neutral-600 dark:text-white cursor-pointer"
+            id="user-icon"
+          >
+            <div class="customer-links">
+              <div class="user-icons flex items-center justify-center">
+                <!-- Icon -->
+                <i class="fa-regular fa-user text-2xl"></i>
+                <i class="fa-solid fa-angle-down angle text-xl"></i>
+              </div>
+            </div>
+          </a>
+
+          <!-- user profile dropdown menu -->
+          <div
+            class="absolute right-[75%] top-8 z-20 p-3 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dropdown-menu"
+            role="menu"
+            aria-orientation="vertical"
+            aria-labelledby="menu-button"
+            tabindex="-1"
+            id="dropdown-menu"
+          >
+            <div class="py-1" role="none">
+              <a
+                href="#"
+                class="block px-5 py-1 text-sm text-gray-700 hover:bg-gray-300 hover:text-gray-700 rounded-md"
+                onclick="gotoLogin()"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-0"
+              >
+                <i class="fa-regular fa-user text-lg pr-4"></i>
+                Account</a
+              >
+              <a
+                href="#"
+                class="block px-5 py-1 text-sm text-gray-700 hover:bg-gray-300 hover:text-gray-700 rounded-md"
+                onclick="gotoLogin()"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-0"
+              >
+                <i class="fa-regular fa-user text-lg pr-4"></i>
+                Login</a
+              >
+              <a
+                href="#"
+                onclick="gotoSignup()"
+                class="block px-5 py-1 text-sm text-gray-700 hover:bg-gray-300 hover:text-gray-700 rounded-md"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-1"
+                ><i class="fa-regular fa-address-card text-lg pr-2"></i> Sign
+                Up</a
+              >
+              <a
+                href="#"
+                onclick="gotoSignup()"
+                class="block px-5 py-1 text-sm text-gray-700 hover:bg-gray-300 hover:text-gray-700 rounded-md"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-1"
+              >
+                <i class="fa-solid fa-ban text-lg pr-2"></i> Sign Out</a
+              >
+            </div>
+          </div>
+
+          <!-- wishlist icon -->
+
+          <a
+            class="wishlist hidden sm:hiddden md:block"
+            href=""
+            title="My Wishlists"
+          >
+            <i class="fa-regular fa-heart text-2xl"></i>
+          </a>
+
+          <!-- WhatsApp icon -->
+          <a href="#" class="hidden sm:hidden md:block">
+            <img
+              src="https://cdn.shopify.com/s/files/1/2287/9679/files/whatsapp-icon.png?v=1631614102"
+              alt="whatsapp call"
+              class="w-6 mx-4"
+            />
+          </a>
+
+          <!-- cart icons  -->
+
+          <div
+            class="wrapper-top-cart relative inline-block transition-all duration-300 ease-in-out"
+            onclick="gotoCart()"
+          >
+            <i class="fa-solid fa-cart-shopping cursor-pointer text-2xl"></i>
+            <div class="badge badge-secondary">0</div>
+            <div class="dropdown-cart hidden sm:hidden md:hidden lg:block">
+              <div class="no-items sm:hidden md:hidden lg:block">
+                <p class="text-center mb-6">Your cart is currently empty.</p>
+                <div class="mb-3">
+                  <a class="btn-black" href="#"> Continue Shopping </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- searchbar -->
+
+          <div class="searchBar ml-3 hidden sm:hidden md:hidden lg:block">
+            <input type="text" placeholder="SEARCH" />
+            <i class="fa-solid fa-magnifying-glass search-icons"></i>
+          </div>
+        </div>
+        <!-- Right elements -->
+      </div>
+    </header>
+    <!-- headder section complete -->
+
+    <!-- nav section start-->
+    <nav class="relative w-full z-10 lg:py-8 lg:px-6">
+      <div class="container mx-auto">
+        <!-- Menu items for large devices -->
+        <div class="items-center hidden lg:block">
+          <ul
+            id="menu-items"
+            class="flex justify-between items-center menu-items whitespace-nowrap"
+          >
+            <li class="inline-block align-middle ml-6">
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >SNEAKER STUDIO</a
+              >
+            </li>
+            <!-- Existing menu items -->
+            <li class="inline-block align-middle ml-6">
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >BRANDS</a
+              >
+            </li>
+            <li class="inline-block align-middle ml-6 group">
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >MEN</a
+              >
+              <div
+                class="absolute z-60 bg-white shadow-lg py-5 px-8 transition-all duration-300 ease-in-out mt-6 invisible opacity-0 space-y-4 left-1/2 transform -translate-x-1/2 max-w-[1100px] w-full flex justify-between items-center flex-wrap p-5 group-hover:mt-0 group-hover:visible group-hover:opacity-100"
+              >
+                <div>
+                  <h4
+                    class="text-base font-medium py-3 leading-none text-[#ea4636]"
+                  >
+                    Men's Fashion
+                  </h4>
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                        class="inline-block py-2 text-[15px] text-gray-600 transition-colors duration-300 ease-in-out capitalize"
+                        >Product List</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4
+                    class="text-base font-medium py-3 leading-none text-[#ea4636]"
+                  >
+                    Women's Fashion
+                  </h4>
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                        class="inline-block py-2 text-[15px] text-gray-600 transition-colors duration-300 ease-in-out capitalize"
+                        >Product List</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4
+                    class="text-base font-medium py-3 leading-none text-[#ea4636]"
+                  >
+                    Home, Kitchen
+                  </h4>
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                        class="inline-block py-2 text-[15px] text-gray-600 transition-colors duration-300 ease-in-out capitalize"
+                        >Product List</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4
+                    class="text-base font-medium py-3 leading-none text-[#ea4636]"
+                  >
+                    Home, Kitchen
+                  </h4>
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                        class="inline-block py-2 text-[15px] text-gray-600 transition-colors duration-300 ease-in-out capitalize"
+                        >Product List</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="inline-block align-middle ml-6 group">
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >WOMEN</a
+              >
+            </li>
+            <li class="inline-block align-middle ml-6 group">
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >CHILDREN</a
+              >
+            </li>
+            <li class="inline-block align-middle ml-6 group">
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >ACCESSORIES</a
+              >
+            </li>
+            <li class="inline-block align-middle ml-6 group">
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >BATA CLUB</a
+              >
+            </li>
+            <li class="inline-block align-middle ml-6">
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >B-MAG</a
+              >
+            </li>
+            <li class="inline-block align-middle ml-6">
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >FRANCHISE</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Drawer Menu for small devices -->
+      <div
+        id="drawer-menu"
+        class="fixed inset-0 z-50 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out lg:hidden"
+      >
+        <div class="p-8">
+          <button
+            id="close-drawer"
+            class="mb-4 focus:outline-none absolute right-8 bg-red-400 p-1 rounded-md hover:bg-red-600 text-white"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+          <ul class="mt-10">
+            <li
+              class="border-b border-[#ebebeb] py-3 hover:bg-slate-100 pl-5 rounded-md"
+            >
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >SNEAKER STUDIO</a
+              >
+            </li>
+            <li
+              class="border-b border-[#ebebeb] py-3 hover:bg-slate-100 pl-5 rounded-md"
+            >
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >BRANDS</a
+              >
+            </li>
+            <li
+              id="menu-item-men"
+              class="border-b border-[#ebebeb] py-3 hover:bg-slate-100 px-5 rounded-md flex justify-between"
+            >
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >MEN</a
+              >
+              <i class="fa-solid fa-angle-right"></i>
+            </li>
+            <li
+              class="border-b border-[#ebebeb] py-3 hover:bg-slate-100 pl-5 rounded-md"
+            >
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >WOMEN</a
+              >
+            </li>
+            <li
+              class="border-b border-[#ebebeb] py-3 hover:bg-slate-100 pl-5 rounded-md"
+            >
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >CHILDREN</a
+              >
+            </li>
+            <li
+              class="border-b border-[#ebebeb] py-3 hover:bg-slate-100 pl-5 rounded-md"
+            >
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >ACCESSORIES</a
+              >
+            </li>
+            <li
+              class="border-b border-[#ebebeb] py-3 hover:bg-slate-100 pl-5 rounded-md"
+            >
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >BATA CLUB</a
+              >
+            </li>
+            <li
+              class="border-b border-[#ebebeb] py-3 hover:bg-slate-100 pl-5 rounded-md"
+            >
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >B-MAG</a
+              >
+            </li>
+            <li
+              class="border-b border-[#ebebeb] py-3 hover:bg-slate-100 pl-5 rounded-md"
+            >
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >FRANCHISE</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Submenu for MEN -->
+      <div
+        id="submenu-men"
+        class="fixed inset-0 z-50 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out lg:hidden"
+      >
+        <div class="p-8">
+          <button
+            id="back-to-main-menu"
+            class="mb-4 focus:outline-none absolute left-8 bg-gray-200 p-1 rounded-md hover:bg-gray-400 text-black"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              ></path>
+            </svg>
+          </button>
+          <h3 class="text-lg font-bold mb-4 text-center">Men's Fashion</h3>
+          <ul class="mt-10">
+            <li
+              class="border-b border-[#ebebeb] py-3 hover:bg-slate-100 pl-5 rounded-md"
+            >
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >Product List</a
+              >
+            </li>
+            <li
+              class="border-b border-[#ebebeb] py-3 hover:bg-slate-100 pl-5 rounded-md"
+            >
+              <a
+                href="#"
+                class="text-sm font-bold text-black capitalize transition-colors duration-300 ease-in-out"
+                >Product List</a
+              >
+            </li>
+            <!-- Add more submenu items as needed -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav section end -->
+
+    <!-- main section  start-->
+    <main class="container mx-auto p-4">
+      <div class="relative h-full flex items-center gap-10">
+        <div class="">
+          <div class="w-full h-auto relative slider-img">
+            <!-- Second image -->
+            <img
+              src="//www.batabd.com/cdn/shop/files/8514060_2_300x.jpg?v=1716973491"
+              alt=""
+              class="second-image absolute top-0 left-0 w-52 opacity-0 transition duration-300"
+            />
+            <!-- First image -->
+            <img
+              src="https://www.batabd.com/cdn/shop/files/8514060_1_compact.jpg?v=1716973490"
+              alt=""
+              class="first-image block transition duration-300 w-52"
+            />
+            <!-- Icons and span -->
+            <i
+              class="far fa-heart absolute top-3 right-3 text-2xl opacity-0 transition duration-300"
+            ></i>
+
+            <span
+              class="quickview-button bg-white text-black hover:bg-black hover:text-white"
+            >
+              Quick view
+            </span>
+          </div>
+        </div>
+
+        <div class="flex flex-col">
+          <h5 class="pb-2">BATA</h5>
+          <h6 class="pb-2">Bata RUBENS Casual Loafer For Men</h6>
+          <div>
+            <del class="font-bold pr-2 opacity-30">TK. 1399.00</del>
+            <span class="font-bold text-red-600">TK. 1049.00</span>
+          </div>
+          <div class="flex text-continue items-center gap-5 pt-4">
+            <button
+              class="bg-black text-white font-bold px-5 py-2 hover:bg-red-500 rounded"
+              href="#"
+            >
+              Shop Now
+            </button>
+
+            <div class="flexi items-center">
+              <i class="fa-regular fa-heart text-lg"></i>
+              <a href="" class="text-lg pl-3 hover:underline"
+                >Add To WishList</a
+              >
+            </div>
+            <div class="flexi items-center">
+              <i class="fa-solid fa-code-compare text-lg"></i>
+              <a href="" class="text-lg pl-3 hover:underline">Add To Compare</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- main section  end-->
+    <!-- Footer Section -->
+
+    <footer class="footer p-10 bg-black text-white">
+      <nav class="footer-nav">
+        <h6 class="footer-title">ABOUT</h6>
+        <a class="">About Us</a>
+        <a class="">Careers</a>
+        <a class="">Awards & Recognition</a>
+        <a class="">Investors</a>
+        <a class="">Bata Industrials</a>
+        <a class="">Share Department</a>
+      </nav>
+      <nav class="footer-nav">
+        <h6 class="footer-title">INFORMATION</h6>
+        <a class="">TERMS & CONDITIONS</a>
+        <a class="">Payment Options</a>
+        <a class="">Privacy Policy</a>
+        <a class="">Franchise Programme</a>
+        <a class="">Coverage areas</a>
+      </nav>
+      <nav class="footer-nav">
+        <h6 class="footer-title">POPULAR BRANDS</h6>
+        <a class="">Bata</a>
+        <a class="">Hush Puppies</a>
+        <a class="">Power</a>
+        <a class="">Comfit</a>
+        <a class="">Weinbrenner</a>
+        <a class="">North Star</a>
+        <a class="">Marie Claire</a>
+      </nav>
+      <nav class="footer-nav">
+        <h6 class="footer-title">CUSTOMER SERVICE</h6>
+        <a class="">FAQs</a>
+        <a class="">MyBata</a>
+        <a class="">Bata Stores</a>
+        <a class="">All About Feet</a>
+        <a class="">Contact Info</a>
+        <a class="">Report Issue</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">INFO</h6>
+        <a class="">Bata Shoe Company</a>
+        <a class="">
+          Bangladesh Ltd. <br />
+          Tongi Gazipur, Bangladesh.
+        </a>
+        <a class="">Call us at: 09666200300</a>
+        <a class="">
+          (9am-9pm) <br />
+          Email: bd.customercare@bata.com
+        </a>
+      </nav>
+    </footer>
+
+    <footer
+      class="footer px-10 pt-4 border-t bg-black text-white border-base-300 footer2"
+    >
+      <aside class="items-center grid-flow-col">
+        <p>Sign up for our Newsletter</p>
+      </aside>
+      <nav class="md:place-self-center md:justify-self-end">
+        <div class="grid grid-flow-col gap-4">
+          <i class="fa-brands fa-twitter text-2xl"></i>
+          <i class="fa-brands fa-youtube text-2xl"></i>
+          <i class="fa-brands fa-facebook text-2xl"></i>
+        </div>
+      </nav>
+    </footer>
+
+    <footer class="footer footer-center px-10 py-2 bg-black text-white rounded">
+      <p>
+        © 2023 Bata Shoe Company Bangladesh Ltd. Tongi, Postal code - 1710,
+        Gazipur, Bangladesh
+      </p>
+      <nav>
+        <div class="grid grid-flow-col gap-4">
+          <a>
+            <img
+              src="https://www.batabd.com/cdn/shop/files/visa-sq_x300.png?v=1614293775"
+              alt=""
+              class="w-8"
+            />
+          </a>
+          <a>
+            <img
+              src="https://www.batabd.com/cdn/shop/files/masterc-sq_x300.png?v=1614293775"
+              alt=""
+              class="w-8"
+            />
+          </a>
+          <a>
+            <img
+              src="https://www.batabd.com/cdn/shop/files/amex-sq_x300.png?v=1614293775"
+              alt=""
+              class="w-8"
+            />
+          </a>
+        </div>
+      </nav>
+    </footer>
+
+    <script src="../Components/script.js"></script>
+  </body>
+</html>

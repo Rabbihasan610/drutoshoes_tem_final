@@ -503,25 +503,25 @@ header {
 /* filter page css */
 
 .scroll-container {
-  max-width: 20rem; /* Example maximum width */
-  height: 200px; /* Example height */
+  max-width: 20rem;
+  height: 200px;
   overflow-y: scroll;
-  scrollbar-width: thin; /* "thin" is a good starting point */
-  scrollbar-color: #000; /* Customize scrollbar colors */
+  scrollbar-width: thin;
+  scrollbar-color: #000;
 }
 
 /* WebKit-specific properties */
 .scroll-container::-webkit-scrollbar {
-  width: 8px; /* Adjust scrollbar width */
+  width: 8px;
 }
 
 .scroll-container::-webkit-scrollbar-track {
-  background-color: lightgray; /* Track color */
+  background-color: lightgray;
 }
 
 .scroll-container::-webkit-scrollbar-thumb {
-  background-color: gray; /* Thumb color */
-  border-radius: 4px; /* Roundness of the thumb */
+  background-color: gray;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar {
@@ -535,3 +535,23 @@ header {
   background-color: gray !important;
   border-radius: 4px !important;
 }
+
+.custom-select {
+  option {
+    font-size: 20px !important;
+  }
+}
+
+/* select.custom-select option:checked {
+  background-color: red;
+  color: white;
+}
+
+.custom-select hover:option {
+  background-color: red !important;
+}
+
+.custom-select option {
+  margin: 10px 10px !important;
+  padding: 10px 10px !important;
+} */
