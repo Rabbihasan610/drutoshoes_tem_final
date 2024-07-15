@@ -336,140 +336,113 @@
         class="flex items-center"
         style="background-image: linear-gradient(115deg, #9f7aea, #fee2fe)"
       >
-        <div class="container mx-auto my-10">
-          <div
-            class="flex flex-col lg:flex-row w-11/12 lg:w-10/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden"
-          >
-            <div
-              class="w-full lg:w-1/2 flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-center"
-              style="
-                background: linear-gradient(
-                    to bottom,
-                    rgba(150, 161, 223, 0.52),
-                    rgba(7, 11, 15, 0.73)
-                  ),
-                  url('https://png.pngtree.com/png-vector/20220526/ourmid/pngtree-online-registration-or-sign-up-login-for-account-on-smartphone-app-png-image_4740863.png');
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-              "
-            >
-              <h1 class="text-white text-3xl mb-3">Welcome</h1>
-              <div>
-                <p class="text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aenean suspendisse aliquam varius rutrum purus maecenas ac
-                  <a href="#" class="text-purple-600 font-bold">Learn more</a>
-                </p>
-              </div>
-            </div>
-            <div class="w-full lg:w-1/2 pt-8 pb-10 px-12">
-              <h2 class="text-3xl text-center mb-8 text-blue-800 font-bold">
-                Register
-              </h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <form action="#">
-                <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-10">
-                  <div class="mt-5">
-                    <label for="" class="font-semibold text-base py-5">
-                      First Name:
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="First Name"
-                      class="border border-gray-400 py-1 px-2 w-full"
-                    />
-                  </div>
-                  <div class="mt-5">
-                    <label for="" class="font-semibold text-base py-5">
-                      Last Name:
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="Last Name"
-                      class="border border-gray-400 py-1 px-2 w-full"
-                    />
-                  </div>
-                </div>
+        <div class="container mx-auto flex items-center justify-center my-10">
+          <div class="pt-8 pb-10 px-12 lg:w-1/3 bg-white">
+            <h2 class="text-3xl text-center mb-8 text-blue-800 font-bold">
+              Register
+            </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <form action="#">
+              <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-10">
                 <div class="mt-5">
                   <label for="" class="font-semibold text-base py-5">
-                    Email:
+                    First Name:
                   </label>
                   <input
                     type="text"
-                    placeholder="Email"
+                    placeholder="First Name"
                     class="border border-gray-400 py-1 px-2 w-full"
                   />
                 </div>
                 <div class="mt-5">
-                  <label for="" class="font-semibold text-base">
-                    Password:
+                  <label for="" class="font-semibold text-base py-5">
+                    Last Name:
                   </label>
                   <input
-                    type="password"
-                    placeholder="Password"
-                    class="border border-gray-400 pt-2 py-1 px-2 w-full"
+                    type="text"
+                    placeholder="Last Name"
+                    class="border border-gray-400 py-1 px-2 w-full"
                   />
                 </div>
-                <div class="mt-5 pb-3">
-                  <label for="" class="font-semibold text-base">
-                    Confirm Password:
-                  </label>
+              </div>
+              <div class="mt-5">
+                <label for="" class="font-semibold text-base py-5">
+                  Email:
+                </label>
+                <input
+                  type="text"
+                  placeholder="Email"
+                  class="border border-gray-400 py-1 px-2 w-full"
+                />
+              </div>
+              <div class="mt-5">
+                <label for="" class="font-semibold text-base">
+                  Password:
+                </label>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="border border-gray-400 pt-2 py-1 px-2 w-full"
+                />
+              </div>
+              <div class="mt-5 pb-3">
+                <label for="" class="font-semibold text-base">
+                  Confirm Password:
+                </label>
+                <input
+                  type="password"
+                  placeholder="Confirm Password"
+                  class="border border-gray-400 pt-2 py-1 px-2 w-full"
+                />
+              </div>
+              <div class="mt-5 flex items-center">
+                <div class="flex items-center h-5">
                   <input
-                    type="password"
-                    placeholder="Confirm Password"
-                    class="border border-gray-400 pt-2 py-1 px-2 w-full"
+                    id="terms"
+                    aria-describedby="terms"
+                    type="checkbox"
+                    class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
+                    required=""
                   />
                 </div>
-                <div class="mt-5 flex items-center">
-                  <div class="flex items-center h-5">
-                    <input
-                      id="terms"
-                      aria-describedby="terms"
-                      type="checkbox"
-                      class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
-                      required=""
-                    />
-                  </div>
-                  <div class="ml-3 text-sm">
-                    <label
-                      for="terms"
-                      class="font-light text-gray-500 dark:text-gray-300"
-                      >I accept the
-                      <a
-                        class="font-medium text-primary-600 hover:underline dark:text-primary-500"
-                        href="#"
-                        >Terms and Conditions</a
-                      ></label
-                    >
-                  </div>
-                </div>
-                <div class="mt-5">
-                  <button
-                    class="w-full font-bold bg-purple-500 py-3 text-center text-white"
+                <div class="ml-3 text-sm">
+                  <label
+                    for="terms"
+                    class="font-light text-gray-500 dark:text-gray-300"
+                    >I accept the
+                    <a
+                      class="font-medium text-primary-600 hover:underline dark:text-primary-500"
+                      href="#"
+                      >Terms and Conditions</a
+                    ></label
                   >
-                    Register
-                  </button>
                 </div>
-              </form>
-              <div class="text-center py-5">
-                <a class="">
-                  Already have an account?
-                  <span class="text-red-500">Login!</span>
-                </a>
               </div>
-              <hr class="mb-5 border-t" />
-              <div class="flex items-center justify-center gap-8">
-                <button class="btn btn-square btn-outline">
-                  <i class="fa-brands fa-facebook-f text-2xl text-blue-500"></i>
-                </button>
-                <button class="btn btn-square btn-outline">
-                  <i class="fa-brands fa-apple text-2xl"></i>
-                </button>
-                <button class="btn btn-square btn-outline">
-                  <i class="fa-brands fa-google text-2xl text-red-400"></i>
+              <div class="mt-5">
+                <button
+                  class="w-full font-bold bg-purple-500 py-3 text-center text-white"
+                >
+                  Register
                 </button>
               </div>
+            </form>
+            <div class="text-center py-5">
+              <a class="">
+                Already have an account?
+                <span class="text-red-500">Login!</span>
+              </a>
+            </div>
+            <hr class="mb-5 border-t" />
+            <div class="flex items-center justify-center gap-8">
+              <button class="btn btn-square btn-outline">
+                <i class="fa-brands fa-facebook-f text-2xl text-blue-500"></i>
+              </button>
+              <button class="btn btn-square btn-outline">
+                <i class="fa-brands fa-apple text-2xl"></i>
+              </button>
+              <button class="btn btn-square btn-outline">
+                <i class="fa-brands fa-google text-2xl text-red-400"></i>
+              </button>
             </div>
           </div>
         </div>
